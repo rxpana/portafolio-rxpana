@@ -29,11 +29,12 @@
             font-size: 3.5rem;
             font-weight: bold;
             margin-bottom: 1rem;
+            color: #ffffff;
             text-shadow: 
-                0 0 5px #df4f01,
-                0 0 10px #df4f01,
-                0 0 15px #df4f01,
-                0 0 20px #df4f01;
+                0 0 2px rgba(255, 140, 66, 0.8),
+                0 0 5px rgba(255, 140, 66, 0.6),
+                0 0 10px rgba(255, 140, 66, 0.4),
+                0 2px 4px rgba(0, 0, 0, 0.5);
             animation: neonPulse 2s ease-in-out infinite alternate;
         }
 
@@ -65,10 +66,11 @@
 
         .progress-fill {
             height: 100%;
-            background: linear-gradient(90deg, #00ffff, #ff00ff, #00ffff);
+            background: linear-gradient(90deg, #ff8c42, #ff6b1a, #ff8c42);
             border-radius: 2px;
             animation: progressLoad 3s ease-out forwards;
             transform: translateX(-100%);
+            box-shadow: 0 0 10px #ff8c42;
         }
 
         .particles {
@@ -86,29 +88,27 @@
             height: 2px;
             background: #00ffff;
             border-radius: 50%;
-            animation: float 6s ease-in-out infinite;
         }
 
         @keyframes neonPulse {
             0% {
                 text-shadow: 
-                    0 0 5px #00ffff,
-                    0 0 10px #00ffff,
-                    0 0 15px #00ffff,
-                    0 0 20px #00ffff;
+                    0 0 2px rgba(255, 140, 66, 0.8),
+                    0 0 5px rgba(255, 140, 66, 0.6),
+                    0 0 10px rgba(255, 140, 66, 0.4),
+                    0 2px 4px rgba(0, 0, 0, 0.5);
             }
             100% {
                 text-shadow: 
-                    0 0 10px #00ffff,
-                    0 0 20px #00ffff,
-                    0 0 30px #00ffff,
-                    0 0 40px #00ffff;
+                    0 0 5px rgba(255, 140, 66, 0.9),
+                    0 0 10px rgba(255, 140, 66, 0.7),
+                    0 0 15px rgba(255, 140, 66, 0.5),
+                    0 2px 4px rgba(0, 0, 0, 0.5);
             }
         }
 
         @keyframes fadeInOut {
             0%, 100% { opacity: 0.5; }
-            50% { opacity: 1; }
         }
 
         @keyframes progressLoad {
@@ -182,13 +182,13 @@
 
         // Redirect to homepage after 3 seconds
         setTimeout(function() {
-            window.location.href = 'pages/homepage_premium_digital_portfolio.html';
+            window.location.href = 'pages/landing.html';
         }, 3000);
 
         // Preload the target page
         const link = document.createElement('link');
         link.rel = 'prefetch';
-        link.href = 'pages/homepage_premium_digital_portfolio.html';
+        link.href = 'pages/landing.html';
         document.head.appendChild(link);
     </script>
 <script id="dhws-dataInjector" src="/public/dhws-data-injector.js"></script>
