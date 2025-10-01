@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Inicio</title>
+    <title>rxpana studio</title>
     <meta name="description" content="Iluminando Posibilidades Digitales a través de experiencias web 3D de vanguardia y soluciones digitales premium. Transforma tu visión en una realidad digital extraordinaria." />
     <link rel="stylesheet" href="../css/main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -11,35 +11,39 @@
 <script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fneonportf9496back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.8"></script>
 </head>
 <body class="bg-background text-text-primary overflow-x-hidden">
-    <!-- Floating Navigation -->
-    <nav id="floating-nav" class="fixed top-6 left-1/2 transform -translate-x-1/2 z-50 bg-surface/80 backdrop-blur-lg border border-border rounded-2xl px-8 py-4 transition-all duration-300 ease-out">
-        <div class="flex items-center space-x-8">
-            <a href="homepage_premium_digital_portfolio.html" class="text-secondary font-bold text-xl neon-glow-orange">rxpana</a>
-            <div class="hidden md:flex items-center space-x-6">
-                <a href="portfolio_interactive_project_showcase.html" class="text-text-secondary hover:text-secondary transition-colors duration-300">Portfolio</a>
-                <a href="about_digital_craftsperson_story.html" class="text-text-secondary hover:text-secondary transition-colors duration-300">Sobre mi</a>
-                <!-- <a href="lab_creative_experiments_hub.html" class="text-text-secondary hover:text-secondary transition-colors duration-300">Lab</a> -->
-                <a href="contact_multi_touch_engagement_hub.html" class="text-text-secondary hover:text-secondary transition-colors duration-300">Contacto</a>
+    <!-- Floating Navigation (Desktop) -->
+    <nav id="floating-nav" class="hidden md:flex fixed top-6 left-1/2 transform -translate-x-1/2 z-50 bg-surface/80 backdrop-blur-lg border border-border rounded-2xl px-8 py-4 transition-all duration-300 ease-out">
+        <div class="flex items-center justify-between w-full space-x-8">
+            <a href="landing.html"><img src="../resources/FullColor_logo_horiz.png" alt="rxpana logo" class="h-12"></a>
+            <div class="flex items-center space-x-6">
+                <a href="portfolio.html" class="text-text-secondary hover:text-secondary transition-colors duration-300">Portfolio</a>
+                <a href="about.html" class="text-text-secondary hover:text-secondary transition-colors duration-300">Sobre mi</a>
+                <a href="contact.html" class="text-text-secondary hover:text-secondary transition-colors duration-300">Contacto</a>
             </div>
-            <a href="contact_multi_touch_engagement_hub.html" class="btn-primary text-sm">Iniciar Proyecto</a>
+            <a href="resume.html" class="btn-primary text-sm">Ver CV</a>
         </div>
     </nav>
 
-    <!-- Mobile Menu Button -->
-    <button id="mobile-menu-btn" class="fixed top-6 right-6 z-50 md:hidden bg-surface border border-border rounded-lg p-3 hover:border-secondary transition-colors duration-300">
-        <svg class="w-6 h-6 text-text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-        </svg>
-    </button>
+    <!-- Mobile Navigation -->
+    <nav class="md:hidden fixed top-6 left-1/2 transform -translate-x-1/2 z-50 bg-surface/80 backdrop-blur-lg border border-border rounded-2xl px-8 py-4 w-[90vw] max-w-md">
+        <div class="flex items-center justify-between gap-6">
+            <a href="landing.html" class="flex-shrink-0"><img src="../resources/toon_rxpana.png" alt="rxpana logo" class="h-12 w-auto object-contain"></a>
+            <a href="resume.html" class="btn-primary text-sm px-5 py-2 whitespace-nowrap inline-flex items-center justify-center flex-shrink-0">Ver CV</a>
+            <button id="mobile-menu-btn" class="bg-surface border border-border rounded-lg p-2 hover:border-secondary transition-colors duration-300 flex-shrink-0">
+                <svg class="w-5 h-5 text-text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+            </button>
+        </div>
+    </nav>
 
     <!-- Mobile Menu Overlay -->
     <div id="mobile-menu" class="fixed inset-0 z-40 bg-background/95 backdrop-blur-lg hidden">
         <div class="flex flex-col items-center justify-center h-full space-y-8">
-            <a href="portfolio_interactive_project_showcase.html" class="text-2xl text-text-secondary hover:text-secondary transition-colors duration-300">Portfolio</a>
-            <a href="about_digital_craftsperson_story.html" class="text-2xl text-text-secondary hover:text-secondary transition-colors duration-300">Sobre mi</a>
-            <!-- <a href="lab_creative_experiments_hub.html" class="text-2xl text-text-secondary hover:text-secondary transition-colors duration-300">Lab</a> -->
-            <a href="contact_multi_touch_engagement_hub.html" class="text-2xl text-text-secondary hover:text-secondary transition-colors duration-300">Contacto</a>
-            <a href="contact_multi_touch_engagement_hub.html" class="btn-primary text-lg mt-8">Iniciar Proyecto</a>
+            <a href="portfolio.html" class="text-2xl text-text-secondary hover:text-secondary transition-colors duration-300">Portfolio</a>
+            <a href="about.html" class="text-2xl text-text-secondary hover:text-secondary transition-colors duration-300">Sobre mi</a>  
+            <a href="contact.html" class="text-2xl text-text-secondary hover:text-secondary transition-colors duration-300">Contacto</a>
+            <a href="resume.html" class="btn-primary text-lg mt-8">Ver CV</a>
         </div>
     </div>
 
@@ -63,18 +67,22 @@
         </div>
 
         <!-- HERO DE INICIO -->
-        <div class="relative z-10 text-center px-6 max-w-6xl mx-auto">
+        <div class="relative z-10 text-center px-6 max-w-6xl mx-auto pt-32 md:pt-0">
+            <img src="/resources/photo_rxpana.png" alt="" class="mx-auto w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 rounded-full object-cover mt-12 md:mt-0 mb-4 animate-pop">
+            <div class="inline-block bg-surface border border-border text-text-primary rounded-xl shadow-lg px-6 py-3 md:px-4 md:py-2 font-medium text-lg md:text-sm mb-6 -mt-2 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:border-secondary cursor-default w-auto">
+                Web Developer
+            </div>
             <h1 class="text-6xl md:text-8xl font-bold mb-6 text-gradient animate-fade-in hero-text" data-cursor="wave">
-                Think Different,<br />Think <strong>webnia</strong>
+                <span id="typewriter"></span><span class="typewriter-cursor">|</span>
             </h1>
-            <p class="text-xl md:text-2xl text-text-secondary mb-8 max-w-3xl mx-auto animate-slide-up hero-text" data-cursor="wave">
-                "Transformando código en creatividad, construyendo experiencias web que inspiran, involucran y empujan los límites de lo que es posible en línea."
+            <p class="text-xl md:text-2xl text-text-secondary mb-8 max-w-3xl mx-auto animate-slide-up hero-text font-light leading-relaxed tracking-wide" data-cursor="wave" style="font-family: 'DM Sans', sans-serif;">
+                ¡Hola! Soy Rodrigo, desarrollador web freelance. Ayudo a empresas locales e internacionales a transformar sus ideas en sitios web atractivos y funcionales. Échale un vistazo a mi trabajo y potencia tu negocio en la web.
             </p>
             <div class="flex flex-col sm:flex-row gap-6 justify-center items-center animate-slide-up" style="animation-delay: 0.3s;">
-                <a href="portfolio_interactive_project_showcase.html" class="btn-primary text-lg px-8 py-4">
+                <a href="portfolio.html" class="btn-primary text-lg px-8 py-4">
                     Ve mis trabajos
                 </a>
-                <a href="contact_multi_touch_engagement_hub.html" class="border border-secondary text-secondary hover:bg-secondary hover:text-primary px-8 py-4 rounded-lg transition-all duration-300 hover-lift neon-glow-orange">
+                <a href="contact.html" class="border border-secondary text-secondary hover:bg-secondary hover:text-primary px-8 py-4 rounded-lg transition-all duration-300 hover-lift neon-glow-orange">
                     Inicia un proyecto
                 </a>
             </div>
@@ -86,155 +94,299 @@
         </div>
 
         <!-- Scroll Indicator -->
-        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+        <div class="hidden md:block absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
             <svg class="w-6 h-6 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
             </svg>
         </div>
     </section>
 
-    <!-- Technologies Carousel -->
-<section class="py-20 px-6">
+<!-- Stack de Desarrollo -->
+<section class="py-24 px-6 bg-[#0a0a0a]">
     <div class="max-w-7xl mx-auto">
         <div class="text-center mb-16">
-            <h2 class="text-4xl md:text-5xl font-bold mb-6 text-gradient">Mi Stack de Desarrollo</h2>
+            <h2 class="text-4xl md:text-5xl font-bold mb-6 text-gradient">Mi Stack de desarrollo</h2>
             <p class="text-xl text-text-secondary max-w-3xl mx-auto">
-                Herramientas y marcos de vanguardia que potencian experiencias digitales extraordinarias
+                Estas son las tecnologías que utilizo en mis proyectos para crear experiencias web modernas, rápidas y escalables.
             </p>
         </div>
 
-        <!-- Technologies Carousel Container -->
-        <div class="relative overflow-hidden carousel-container">
-            <!-- Degradado naranja de fondo (solo en hover) -->
-            <div class="carousel-gradient absolute inset-0 bg-gradient-to-r from-transparent via-orange-500/30 to-transparent blur-2xl opacity-0 transition-opacity duration-300"></div>
-            <div class="carousel-gradient-secondary absolute inset-0 bg-gradient-to-r from-transparent via-secondary/20 to-transparent blur-xl opacity-0 transition-opacity duration-300"></div>
-            <div class="carousel-track flex space-x-8 relative z-10" id="tech-carousel">
-                <!-- Frontend Technologies -->
-                <div class="carousel-item flex-shrink-0 w-32 h-32 bg-surface border border-border rounded-2xl flex flex-col items-center justify-center hover-lift group transition-all duration-300">
-                    <div class="w-12 h-12 mb-3 bg-gradient-to-r from-blue-400 to-blue-600 rounded-lg flex items-center justify-center group-hover:shadow-neon-blue">
-                        <svg class="w-8 h-8 text-white" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M14.23 12.004a2.236 2.236 0 0 1-2.235 2.236 2.236 2.236 0 0 1-2.236-2.236 2.236 2.236 0 0 1 2.235-2.236 2.236 2.236 0 0 1 2.236 2.236zm2.648-10.69c-1.346 0-3.107.96-4.888 2.622-1.78-1.653-3.542-2.602-4.887-2.602-.41 0-.783.093-1.106.278-1.375.793-1.683 3.264-.973 6.365C1.98 8.917 0 10.42 0 12.004c0 1.59 1.99 3.097 5.043 4.03-.704 3.113-.39 5.588.988 6.38.32.187.69.275 1.102.275 1.345 0 3.107-.96 4.888-2.624 1.78 1.654 3.542 2.603 4.887 2.603.41 0 .783-.09 1.106-.275 1.374-.792 1.683-3.263.973-6.365C22.02 15.096 24 13.59 24 12.004c0-1.59-1.99-3.097-5.043-4.032.704-3.11.39-5.587-.988-6.38-.318-.184-.688-.277-1.092-.278zm-.005 1.09v.006c.225 0 .406.044.558.127.666.382.955 1.835.73 3.704-.054.46-.142.945-.25 1.44-.96-.236-2.006-.417-3.107-.534-.66-.905-1.345-1.727-2.035-2.447 1.592-1.48 3.087-2.292 4.105-2.295zm-9.77.02c1.012 0 2.514.808 4.11 2.28-.686.72-1.37 1.537-2.02 2.442-1.107.117-2.154.298-3.113.538-.112-.49-.195-.964-.254-1.42-.23-1.868.054-3.32.714-3.707.19-.09.4-.127.563-.132zm4.882 3.05c.455.468.91.992 1.36 1.564-.44-.02-.89-.034-1.345-.034-.46 0-.915.01-1.36.034.44-.572.895-1.096 1.345-1.565zM12 8.1c.74 0 1.477.034 2.202.093.406.582.802 1.203 1.183 1.86.372.64.71 1.29 1.018 1.946-.308.655-.646 1.31-1.013 1.95-.38.66-.773 1.288-1.18 1.87-.728.063-1.466.098-2.21.098-.74 0-1.477-.035-2.202-.093-.406-.582-.802-1.204-1.183-1.86-.372-.64-.71-1.29-1.018-1.946.303-.657.646-1.313 1.013-1.954.38-.66.773-1.286 1.18-1.868.728-.064 1.466-.098 2.21-.098zm-3.635.254c-.24.377-.48.763-.704 1.16-.225.39-.435.782-.635 1.174-.265-.656-.49-1.31-.676-1.947.64-.15 1.315-.283 2.015-.386zm7.26 0c.695.103 1.365.23 2.006.387-.18.632-.405 1.282-.66 1.933-.2-.39-.41-.783-.64-1.174-.225-.392-.465-.774-.705-1.146zm3.063.675c.484.15.944.317 1.375.498 1.732.74 2.852 1.708 2.852 2.476-.005.768-1.125 1.74-2.857 2.475-.42.18-.88.342-1.355.493-.28-.958-.646-1.956-1.1-2.98.45-1.017.81-2.01 1.085-2.964zm-13.395.004c.278.96.645 1.957 1.1 2.98-.45 1.017-.812 2.01-1.086 2.964-.484-.15-.944-.318-1.37-.5-1.732-.737-2.852-1.706-2.852-2.474 0-.768 1.12-1.742 2.852-2.476.42-.18.88-.342 1.356-.494zm11.678 4.28c.265.657.49 1.312.676 1.948-.64.157-1.316.29-2.016.39.24-.375.48-.762.705-1.158.225-.39.435-.788.636-1.18zm-9.945.02c.2.392.41.783.64 1.175.23.39.465.772.705 1.143-.695-.102-1.365-.23-2.006-.386.18-.63.406-1.282.66-1.933zM17.92 16.32c.112.493.2.968.254 1.423.23 1.868-.054 3.32-.714 3.708-.147.09-.338.128-.563.128-1.012 0-2.514-.807-4.11-2.28.686-.72 1.37-1.536 2.02-2.44 1.107-.118 2.154-.3 3.113-.54zm-11.83.01c.96.234 2.006.415 3.107.532.66.905 1.345 1.727 2.035 2.446-1.595 1.483-3.092 2.295-4.11 2.295-.22-.005-.406-.05-.553-.132-.666-.38-.955-1.834-.73-3.703.054-.46.142-.944.25-1.438zm4.56.64c.44.02.89.034 1.345.034.46 0 .915-.01 1.36-.034-.44.572-.895 1.095-1.345 1.565-.455-.47-.91-.993-1.36-1.565z"/>
-                        </svg>
+        <!-- Infinite Auto-Scroll Carousel -->
+        <div class="relative overflow-hidden py-12 mt-8">
+            <!-- Gradient Overlays -->
+            <div class="absolute left-0 top-0 bottom-0 w-48 z-10 pointer-events-none" style="background: linear-gradient(to right, #0a0a0a 0%, #0a0a0a 20%, rgba(10, 10, 10, 0.8) 50%, transparent 100%);"></div>
+            <div class="absolute right-0 top-0 bottom-0 w-48 z-10 pointer-events-none" style="background: linear-gradient(to left, #0a0a0a 0%, #0a0a0a 20%, rgba(10, 10, 10, 0.8) 50%, transparent 100%);"></div>
+            
+            <div class="flex animate-scroll-infinite gap-6">
+                <!-- HTML -->
+                <div class="flex-shrink-0 group">
+                    <div class="tech-card bg-surface/80 backdrop-blur-lg border border-border rounded-xl p-6 w-52 h-36 my-4 flex items-center gap-4 hover:shadow-xl hover:shadow-orange-500/20 hover:border-orange-500/50">
+                        <div class="w-12 h-12 flex-shrink-0">
+                            <svg viewBox="0 0 24 24" fill="#E34F26" class="w-full h-full">
+                                <path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="text-white font-semibold text-sm">HTML</p>
+                            <p class="text-gray-500 text-xs">Markup</p>
+                        </div>
                     </div>
-                    <span class="text-sm font-medium text-text-secondary group-hover:text-secondary transition-colors">React</span>
                 </div>
 
-                <div class="carousel-item flex-shrink-0 w-32 h-32 bg-surface border border-border rounded-2xl flex flex-col items-center justify-center hover-lift group transition-all duration-300">
-                    <div class="w-12 h-12 mb-3 bg-gradient-to-r from-black to-gray-800 rounded-lg flex items-center justify-center group-hover:shadow-neon-gray">
-                        <svg class="w-8 h-8 text-white" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M11.572 0c-.176 0-.31.001-.358.007a19.76 19.76 0 0 1-.364.033C7.443.346 4.25 2.185 2.228 5.012a11.875 11.875 0 0 0-2.119 5.243c-.096.659-.108.854-.108 1.747s.012 1.089.108 1.748c.652 4.506 3.86 8.292 8.209 9.695.779.25 1.6.422 2.534.525.363.04 1.935.04 2.299 0 1.611-.178 2.977-.577 4.323-1.264.207-.106.247-.134.219-.158-.02-.013-.9-1.193-1.955-2.62l-1.919-2.592-2.404-3.558a338.739 338.739 0 0 0-2.422-3.556c-.009-.002-.018 1.579-.023 3.51-.007 3.38-.01 3.515-.052 3.595a.426.426 0 0 1-.206.214c-.075.037-.14.044-.495.044H7.81l-.108-.068a.438.438 0 0 1-.157-.171l-.05-.106.006-4.703.007-4.705.072-.092a.645.645 0 0 1 .174-.143c.096-.047.134-.051.54-.051.478 0 .558.018.682.154.035.038 1.337 1.999 2.895 4.361a10760.433 10760.433 0 0 0 4.735 7.17l1.9 2.879.096-.063a12.317 12.317 0 0 0 2.466-2.163 11.944 11.944 0 0 0 2.824-6.134c.096-.66.108-.854.108-1.748 0-.893-.012-1.088-.108-1.747C19.146 4.65 16.458 1.701 12.9.511 12.15.249 11.294.126 10.438.07c-.138-.01-.278-.015-.406-.017-.297 0-.895.01-1.309.044z"/>
-                        </svg>
+                <!-- CSS -->
+                <div class="flex-shrink-0 group">
+                    <div class="tech-card bg-surface/80 backdrop-blur-lg border border-border rounded-xl p-6 w-52 h-36 my-4 flex items-center gap-4 hover:shadow-xl hover:shadow-blue-500/20 hover:border-blue-500/50">
+                        <div class="w-12 h-12 flex-shrink-0">
+                            <svg viewBox="0 0 24 24" fill="#1572B6" class="w-full h-full">
+                                <path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm17.09 4.413L5.41 4.41l.213 2.622 10.125.002-.255 2.716h-6.64l.24 2.573h6.182l-.366 3.523-2.91.804-2.956-.81-.188-2.11h-2.61l.29 3.855L12 19.288l5.373-1.53L18.59 4.414z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="text-white font-semibold text-sm">CSS</p>
+                            <p class="text-gray-500 text-xs">Styling</p>
+                        </div>
                     </div>
-                    <span class="text-sm font-medium text-text-secondary group-hover:text-secondary transition-colors">Next.js</span>
                 </div>
 
-                <div class="carousel-item flex-shrink-0 w-32 h-32 bg-surface border border-border rounded-2xl flex flex-col items-center justify-center hover-lift group transition-all duration-300">
-                    <div class="w-12 h-12 mb-3 bg-gradient-to-r from-green-400 to-green-600 rounded-lg flex items-center justify-center group-hover:shadow-neon-green">
-                        <svg class="w-8 h-8 text-white" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M207.953 77.958l-40.921-40.918c-7.634-7.633-20.022-7.633-27.658 0l-8.541 8.541 10.823 10.823c8.138-2.748 17.467-0.901 23.953 5.584 6.554 6.554 8.365 16.064 5.426 24.153l10.43 10.43c8.089-2.938 17.599-1.128 24.153 5.426 9.133 9.133 9.133 23.93 0 33.062-9.133 9.133-23.931 9.133-33.062 0-6.808-6.807-8.496-16.787-5.074-25.182l-9.711-9.711-0.002 25.568c2.235 1.106 4.304 2.706 5.856 4.258 9.133 9.133 9.133 23.93 0 33.062-9.133 9.133-23.931 9.133-33.062 0s-9.133-23.93 0-33.062c2.258-2.258 4.888-3.892 7.758-4.899v-25.818c-2.87-1.007-5.5-2.64-7.758-4.899-6.768-6.768-8.516-16.729-5.142-25.079l-10.685-10.685-28.284 28.284c-7.633 7.633-7.633 20.025 0 27.658l40.92 40.918c7.634 7.634 20.024 7.634 27.658 0l40.921-40.918c7.633-7.632 7.633-20.023 0-27.657z"/>
-                        </svg>
+                <!-- JavaScript -->
+                <div class="flex-shrink-0 group">
+                    <div class="tech-card bg-surface/80 backdrop-blur-lg border border-border rounded-xl p-6 w-52 h-36 my-4 flex items-center gap-4 hover:shadow-xl hover:shadow-yellow-500/20 hover:border-yellow-500/50">
+                        <div class="w-12 h-12 flex-shrink-0">
+                            <svg viewBox="0 0 24 24" fill="#F7DF1E" class="w-full h-full">
+                                <path d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.404-.601-.586-.78-.63-.705-1.469-1.065-2.834-1.034l-.705.089c-.676.165-1.32.525-1.71 1.005-1.14 1.291-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.41-.811-.18-1.26-.586-1.755-1.336l-1.83 1.051c.21.48.45.689.81 1.109 1.74 1.756 6.09 1.666 6.871-1.004.029-.09.24-.705.074-1.65l.046.067zm-8.983-7.245h-2.248c0 1.938-.009 3.864-.009 5.805 0 1.232.063 2.363-.138 2.711-.33.689-1.18.601-1.566.48-.396-.196-.597-.466-.83-.855-.063-.105-.11-.196-.127-.196l-1.825 1.125c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.691 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054 0-4.109 0-6.179l.004-.056z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="text-white font-semibold text-sm">JavaScript</p>
+                            <p class="text-gray-500 text-xs">Programming</p>
+                        </div>
                     </div>
-                    <span class="text-sm font-medium text-text-secondary group-hover:text-secondary transition-colors">Vue.js</span>
                 </div>
 
-                <div class="carousel-item flex-shrink-0 w-32 h-32 bg-surface border border-border rounded-2xl flex flex-col items-center justify-center hover-lift group transition-all duration-300">
-                    <div class="w-12 h-12 mb-3 bg-gradient-to-r from-yellow-400 to-yellow-600 rounded-lg flex items-center justify-center group-hover:shadow-neon-yellow">
-                        <svg class="w-8 h-8 text-white" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.404-.601-.586-.78-.63-.705-1.469-1.065-2.834-1.034l-.705.089c-.676.165-1.32.525-1.71 1.005-1.14 1.291-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.41-.811-.18-1.26-.586-1.755-1.336l-1.83 1.051c.21.48.45.689.81 1.109 1.74 1.756 6.09 1.666 6.871-1.004.029-.09.24-.705.074-1.65l.046.067zm-8.983-7.245h-2.248c0 1.938-.009 3.864-.009 5.805 0 1.232.063 2.363-.138 2.711-.33.689-1.18.601-1.566.48-.396-.196-.597-.466-.83-.855-.063-.105-.11-.196-.127-.196l-1.825 1.125c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.691 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054 0-4.109 0-6.179l.004-.056z"/>
-                        </svg>
+                <!-- WordPress -->
+                <div class="flex-shrink-0 group">
+                    <div class="tech-card bg-surface/80 backdrop-blur-lg border border-border rounded-xl p-6 w-52 h-36 my-4 flex items-center gap-4 hover:shadow-xl hover:shadow-blue-600/20 hover:border-blue-600/50">
+                        <div class="w-12 h-12 flex-shrink-0">
+                            <svg viewBox="0 0 24 24" fill="#21759B" class="w-full h-full">
+                                <path d="M21.469 6.825c.84 1.537 1.318 3.3 1.318 5.175 0 3.979-2.156 7.456-5.363 9.325l3.295-9.527c.615-1.54.82-2.771.82-3.864 0-.405-.026-.78-.07-1.11m-7.981.105c.647-.03 1.232-.105 1.232-.105.582-.075.514-.93-.067-.899 0 0-1.755.135-2.88.135-1.064 0-2.85-.15-2.85-.15-.585-.03-.661.855-.075.885 0 0 .54.061 1.125.09l1.68 4.605-2.37 7.08L5.354 6.9c.649-.03 1.234-.1 1.234-.1.585-.075.516-.93-.065-.896 0 0-1.746.138-2.874.138-.2 0-.438-.008-.69-.015C4.911 3.15 8.235 1.215 12 1.215c2.809 0 5.365 1.072 7.286 2.833-.046-.003-.091-.009-.141-.009-1.06 0-1.812.923-1.812 1.914 0 .89.513 1.643 1.06 2.531.411.72.89 1.643.89 2.977 0 .915-.354 1.994-.821 3.479l-1.075 3.585-3.9-11.61.001.014zM12 22.784c-1.059 0-2.081-.153-3.048-.437l3.237-9.406 3.315 9.087c.024.053.05.101.078.149-1.12.393-2.325.609-3.582.609M1.211 12c0-1.564.336-3.05.935-4.39L7.29 21.709C3.694 19.96 1.212 16.271 1.211 12M12 0C5.385 0 0 5.385 0 12s5.385 12 12 12 12-5.385 12-12S18.615 0 12 0"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="text-white font-semibold text-sm">WordPress</p>
+                            <p class="text-gray-500 text-xs">CMS</p>
+                        </div>
                     </div>
-                    <span class="text-sm font-medium text-text-secondary group-hover:text-secondary transition-colors">JavaScript</span>
                 </div>
 
-                <div class="carousel-item flex-shrink-0 w-32 h-32 bg-surface border border-border rounded-2xl flex flex-col items-center justify-center hover-lift group transition-all duration-300">
-                    <div class="w-12 h-12 mb-3 bg-gradient-to-r from-blue-500 to-blue-700 rounded-lg flex items-center justify-center group-hover:shadow-neon-blue">
-                        <svg class="w-8 h-8 text-white" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M1.125 0C.502 0 0 .502 0 1.125v21.75C0 23.498.502 24 1.125 24h21.75c.623 0 1.125-.502 1.125-1.125V1.125C24 .502 23.498 0 22.875 0zm17.363 9.75c.612 0 1.154.037 1.627.111a6.38 6.38 0 0 1 1.306.34v2.458a3.95 3.95 0 0 0-.643-.361 5.093 5.093 0 0 0-.717-.26 5.453 5.453 0 0 0-1.426-.2c-.3 0-.573.028-.819.086a2.1 2.1 0 0 0-.623.242c-.17.104-.3.229-.393.374a.888.888 0 0 0-.14.49c0 .196.053.373.156.529.104.156.252.304.443.444s.423.276.696.41c.273.135.582.274.926.416.47.197.892.407 1.266.628.374.222.695.473.963.753.268.279.472.598.614.957.142.359.214.776.214 1.253 0 .657-.125 1.21-.373 1.656a3.033 3.033 0 0 1-1.012 1.085 4.38 4.38 0 0 1-1.487.596c-.566.12-1.163.18-1.79.18a9.916 9.916 0 0 1-1.84-.164 5.544 5.544 0 0 1-1.512-.493v-2.63a5.033 5.033 0 0 0 3.237 1.2c.333 0 .624-.03.872-.09.249-.06.456-.144.623-.25.166-.108.29-.234.373-.38a1.023 1.023 0 0 0-.074-1.089 2.12 2.12 0 0 0-.537-.5 5.597 5.597 0 0 0-.807-.444 27.72 27.72 0 0 0-1.007-.436c-.918-.383-1.602-.852-2.053-1.405-.45-.553-.676-1.222-.676-2.005 0-.614.123-1.141.369-1.582.246-.441.58-.804 1.004-1.089a4.494 4.494 0 0 1 1.47-.629 7.536 7.536 0 0 1 1.77-.201zm-15.113.188h9.563v2.166H9.506v9.646H6.789v-9.646H3.375z"/>
-                        </svg>
+                <!-- Framer -->
+                <div class="flex-shrink-0 group">
+                    <div class="tech-card bg-surface/80 backdrop-blur-lg border border-border rounded-xl p-6 w-52 h-36 my-4 flex items-center gap-4 hover:shadow-xl hover:shadow-purple-500/20 hover:border-purple-500/50">
+                        <div class="w-12 h-12 flex-shrink-0">
+                            <svg viewBox="0 0 24 24" fill="#0055FF" class="w-full h-full">
+                                <path d="M4 0h16v8h-8zM4 8h8l8 8H4zM4 16h8v8z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="text-white font-semibold text-sm">Framer</p>
+                            <p class="text-gray-500 text-xs">Prototyping</p>
+                        </div>
                     </div>
-                    <span class="text-sm font-medium text-text-secondary group-hover:text-secondary transition-colors">TypeScript</span>
                 </div>
 
-                <div class="carousel-item flex-shrink-0 w-32 h-32 bg-surface border border-border rounded-2xl flex flex-col items-center justify-center hover-lift group transition-all duration-300">
-                    <div class="w-12 h-12 mb-3 bg-gradient-to-r from-orange-400 to-orange-600 rounded-lg flex items-center justify-center group-hover:shadow-neon-orange">
-                        <svg class="w-8 h-8 text-white" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12.001,4.8c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 C13.666,10.618,15.027,12,18.001,12c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C16.337,6.182,14.976,4.8,12.001,4.8z M6.001,12c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 c1.177,1.194,2.538,2.576,5.512,2.576c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C10.337,13.382,8.976,12,6.001,12z"/>
-                        </svg>
+                <!-- Tailwind CSS -->
+                <div class="flex-shrink-0 group">
+                    <div class="tech-card bg-surface/80 backdrop-blur-lg border border-border rounded-xl p-6 w-52 h-36 my-4 flex items-center gap-4 hover:shadow-xl hover:shadow-cyan-500/20 hover:border-cyan-500/50">
+                        <div class="w-12 h-12 flex-shrink-0">
+                            <svg viewBox="0 0 24 24" fill="#06B6D4" class="w-full h-full">
+                                <path d="M12.001,4.8c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 C13.666,10.618,15.027,12,18.001,12c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C16.337,6.182,14.976,4.8,12.001,4.8z M6.001,12c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 c1.177,1.194,2.538,2.576,5.512,2.576c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C10.337,13.382,8.976,12,6.001,12z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="text-white font-semibold text-sm">Tailwind CSS</p>
+                            <p class="text-gray-500 text-xs">Utility-first CSS</p>
+                        </div>
                     </div>
-                    <span class="text-sm font-medium text-text-secondary group-hover:text-secondary transition-colors">Tailwind</span>
                 </div>
 
-                <div class="carousel-item flex-shrink-0 w-32 h-32 bg-surface border border-border rounded-2xl flex flex-col items-center justify-center hover-lift group transition-all duration-300">
-                    <div class="w-12 h-12 mb-3 bg-gradient-to-r from-green-500 to-green-700 rounded-lg flex items-center justify-center group-hover:shadow-neon-green">
-                        <svg class="w-8 h-8 text-white" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M11.998,24c-0.321,0-0.641-0.084-0.922-0.247l-2.936-1.737c-0.438-0.245-0.224-0.332-0.08-0.383 c0.585-0.203,0.703-0.25,1.328-0.604c0.065-0.037,0.151-0.023,0.218,0.017l2.256,1.339c0.082,0.045,0.197,0.045,0.272,0l8.795-5.076 c0.082-0.047,0.134-0.141,0.134-0.238V6.921c0-0.099-0.053-0.192-0.137-0.242l-8.791-5.072c-0.081-0.047-0.189-0.047-0.271,0 L3.075,6.68C2.990,6.729,2.936,6.825,2.936,6.921v10.15c0,0.097,0.054,0.189,0.139,0.235l2.409,1.392 c1.307,0.654,2.108-0.116,2.108-0.89V7.787c0-0.142,0.114-0.253,0.256-0.253h1.115c0.139,0,0.255,0.112,0.255,0.253v10.021 c0,1.745-0.95,2.745-2.604,2.745c-0.508,0-0.909,0-2.026-0.551L2.28,18.675c-0.57-0.329-0.922-0.945-0.922-1.604V6.921 c0-0.659,0.353-1.275,0.922-1.603l8.795-5.082c0.557-0.315,1.296-0.315,1.848,0l8.794,5.082c0.570,0.329,0.924,0.944,0.924,1.603 v10.15c0,0.659-0.354,1.273-0.924,1.604l-8.794,5.078C12.643,23.916,12.324,24,11.998,24z M19.099,13.993 c0-1.9-1.284-2.406-3.987-2.763c-2.731-0.361-3.009-0.548-3.009-1.187c0-0.528,0.235-1.233,2.258-1.233 c1.807,0,2.473,0.389,2.747,1.607c0.024,0.115,0.129,0.199,0.247,0.199h1.141c0.071,0,0.138-0.031,0.186-0.081 c0.048-0.054,0.074-0.123,0.067-0.196c-0.177-2.098-1.571-3.076-4.388-3.076c-2.508,0-4.004,1.058-4.004,2.833 c0,1.925,1.488,2.457,3.895,2.695c2.88,0.282,3.103,0.703,3.103,1.269c0,0.983-0.789,1.402-2.642,1.402 c-2.327,0-2.839-0.584-3.011-1.742c-0.02-0.124-0.126-0.215-0.253-0.215h-1.137c-0.141,0-0.254,0.112-0.254,0.253 c0,1.482,0.806,3.248,4.655,3.248C17.501,17.007,19.099,15.91,19.099,13.993z"/>
-                        </svg>
+                <!-- GitHub -->
+                <div class="flex-shrink-0 group">
+                    <div class="tech-card bg-surface/80 backdrop-blur-lg border border-border rounded-xl p-6 w-52 h-36 my-4 flex items-center gap-4 hover:shadow-xl hover:shadow-gray-500/20 hover:border-gray-500/50">
+                        <div class="w-12 h-12 flex-shrink-0">
+                            <svg viewBox="0 0 24 24" fill="#FFFFFF" class="w-full h-full">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="text-white font-semibold text-sm">GitHub</p>
+                            <p class="text-gray-500 text-xs">Version Control</p>
+                        </div>
                     </div>
-                    <span class="text-sm font-medium text-text-secondary group-hover:text-secondary transition-colors">Node.js</span>
                 </div>
 
-                <div class="carousel-item flex-shrink-0 w-32 h-32 bg-surface border border-border rounded-2xl flex flex-col items-center justify-center hover-lift group transition-all duration-300">
-                    <div class="w-12 h-12 mb-3 bg-gradient-to-r from-purple-400 to-purple-600 rounded-lg flex items-center justify-center group-hover:shadow-neon-violet">
-                        <svg class="w-8 h-8 text-white" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M21.81 10.25c0-0.21-0.01-0.42-0.03-0.62-0.51-4.87-4.95-9.52-10.92-9.41C4.93 0.34 0.2 5.29 0.2 11.22c0 5.91 4.84 10.75 10.75 10.75 0.41 0 0.82-0.02 1.23-0.06 5.32-0.56 9.46-5.91 8.9-11.23 0.47 0.21 0.73 0.73 0.73 1.33 0 1.15-0.93 2.08-2.08 2.08s-2.08-0.93-2.08-2.08c0-0.6 0.26-1.12 0.73-1.33z"/>
-                        </svg>
+                <!-- React -->
+                <div class="flex-shrink-0 group">
+                    <div class="tech-card bg-surface/80 backdrop-blur-lg border border-border rounded-xl p-6 w-52 h-36 my-4 flex items-center gap-4 hover:shadow-xl hover:shadow-cyan-400/20 hover:border-cyan-400/50">
+                        <div class="w-12 h-12 flex-shrink-0">
+                            <svg viewBox="0 0 24 24" fill="#61DAFB" class="w-full h-full">
+                                <path d="M14.23 12.004a2.236 2.236 0 0 1-2.235 2.236 2.236 2.236 0 0 1-2.236-2.236 2.236 2.236 0 0 1 2.235-2.236 2.236 2.236 0 0 1 2.236 2.236zm2.648-10.69c-1.346 0-3.107.96-4.888 2.622-1.78-1.653-3.542-2.602-4.887-2.602-.41 0-.783.093-1.106.278-1.375.793-1.683 3.264-.973 6.365C1.98 8.917 0 10.42 0 12.004c0 1.59 1.99 3.097 5.043 4.03-.704 3.113-.39 5.588.988 6.38.32.187.69.275 1.102.275 1.345 0 3.107-.96 4.888-2.624 1.78 1.654 3.542 2.603 4.887 2.603.41 0 .783-.09 1.106-.275 1.374-.792 1.683-3.263.973-6.365C22.02 15.096 24 13.59 24 12.004c0-1.59-1.99-3.097-5.043-4.032.704-3.11.39-5.587-.988-6.38-.318-.184-.688-.277-1.092-.278zm-.005 1.09v.006c.225 0 .406.044.558.127.666.382.955 1.835.73 3.704-.054.46-.142.945-.25 1.44-.96-.236-2.006-.417-3.107-.534-.66-.905-1.345-1.727-2.035-2.447 1.592-1.48 3.087-2.292 4.105-2.295zm-9.77.02c1.012 0 2.514.808 4.11 2.28-.686.72-1.37 1.537-2.02 2.442-1.107.117-2.154.298-3.113.538-.112-.49-.195-.964-.254-1.42-.23-1.868.054-3.32.714-3.707.19-.09.4-.127.563-.132zm4.882 3.05c.455.468.91.992 1.36 1.564-.44-.02-.89-.034-1.345-.034-.46 0-.915.01-1.36.034.44-.572.895-1.096 1.345-1.565zM12 8.1c.74 0 1.477.034 2.202.093.406.582.802 1.203 1.183 1.86.372.64.71 1.29 1.018 1.946-.308.655-.646 1.31-1.013 1.95-.38.66-.773 1.288-1.18 1.87-.728.063-1.466.098-2.21.098-.74 0-1.477-.035-2.202-.093-.406-.582-.802-1.204-1.183-1.86-.372-.64-.71-1.29-1.018-1.946.303-.657.646-1.313 1.013-1.954.38-.66.773-1.286 1.18-1.868.728-.064 1.466-.098 2.21-.098zm-3.635.254c-.24.377-.48.763-.704 1.16-.225.39-.435.782-.635 1.174-.265-.656-.49-1.31-.676-1.947.64-.15 1.315-.283 2.015-.386zm7.26 0c.695.103 1.365.23 2.006.387-.18.632-.405 1.282-.66 1.933-.2-.39-.41-.783-.64-1.174-.225-.392-.465-.774-.705-1.146zm3.063.675c.484.15.944.317 1.375.498 1.732.74 2.852 1.708 2.852 2.476-.005.768-1.125 1.74-2.857 2.475-.42.18-.88.342-1.355.493-.28-.958-.646-1.956-1.1-2.98.45-1.017.81-2.01 1.085-2.964zm-13.395.004c.278.96.645 1.957 1.1 2.98-.45 1.017-.812 2.01-1.086 2.964-.484-.15-.944-.318-1.37-.5-1.732-.737-2.852-1.706-2.852-2.474 0-.768 1.12-1.742 2.852-2.476.42-.18.88-.342 1.356-.494zm11.678 4.28c.265.657.49 1.312.676 1.948-.64.157-1.316.29-2.016.39.24-.375.48-.762.705-1.158.225-.39.435-.788.636-1.18zm-9.945.02c.2.392.41.783.64 1.175.23.39.465.772.705 1.143-.695-.102-1.365-.23-2.006-.386.18-.63.406-1.282.66-1.933zM17.92 16.32c.112.493.2.968.254 1.423.23 1.868-.054 3.32-.714 3.708-.147.09-.338.128-.563.128-1.012 0-2.514-.807-4.11-2.28.686-.72 1.37-1.536 2.02-2.44 1.107-.118 2.154-.3 3.113-.54zm-11.83.01c.96.234 2.006.415 3.107.532.66.905 1.345 1.727 2.035 2.446-1.595 1.483-3.092 2.295-4.11 2.295-.22-.005-.406-.05-.553-.132-.666-.38-.955-1.834-.73-3.703.054-.46.142-.944.25-1.438zm4.56.64c.44.02.89.034 1.345.034.46 0 .915-.01 1.36-.034-.44.572-.895 1.095-1.345 1.565-.455-.47-.91-.993-1.36-1.565z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="text-white font-semibold text-sm">React</p>
+                            <p class="text-gray-500 text-xs">UI Library</p>
+                        </div>
                     </div>
-                    <span class="text-sm font-medium text-text-secondary group-hover:text-secondary transition-colors">Three.js</span>
                 </div>
 
-                <div class="carousel-item flex-shrink-0 w-32 h-32 bg-surface border border-border rounded-2xl flex flex-col items-center justify-center hover-lift group transition-all duration-300">
-                    <div class="w-12 h-12 mb-3 bg-gradient-to-r from-orange-500 to-orange-700 rounded-lg flex items-center justify-center group-hover:shadow-neon-orange">
-                        <svg class="w-8 h-8 text-white" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z"/>
-                        </svg>
+                <!-- Windsurf -->
+                <div class="flex-shrink-0 group">
+                    <div class="tech-card bg-surface/80 backdrop-blur-lg border border-border rounded-xl p-6 w-52 h-36 my-4 flex items-center gap-4 hover:shadow-xl hover:shadow-teal-500/20 hover:border-teal-500/50">
+                        <div class="w-12 h-12 flex-shrink-0">
+                            <svg viewBox="0 0 24 24" fill="#14B8A6" class="w-full h-full">
+                                <path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5zm0 2.18l8 3.6v8.72c0 4.7-3.07 9.09-8 10.5-4.93-1.41-8-5.8-8-10.5V7.78l8-3.6z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="text-white font-semibold text-sm">Windsurf</p>
+                            <p class="text-gray-500 text-xs">AI Development</p>
+                        </div>
                     </div>
-                    <span class="text-sm font-medium text-text-secondary group-hover:text-secondary transition-colors">HTML5</span>
                 </div>
 
-                <div class="carousel-item flex-shrink-0 w-32 h-32 bg-surface border border-border rounded-2xl flex flex-col items-center justify-center hover-lift group transition-all duration-300">
-                    <div class="w-12 h-12 mb-3 bg-gradient-to-r from-blue-400 to-blue-600 rounded-lg flex items-center justify-center group-hover:shadow-neon-blue">
-                        <svg class="w-8 h-8 text-white" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm17.09 4.413L5.41 4.41l.213 2.622 10.125.002-.255 2.716h-6.64l.24 2.573h6.182l-.366 3.523-2.91.804-2.956-.81-.188-2.11h-2.61l.29 3.855L12 19.288l5.373-1.53L18.59 4.414z"/>
-                        </svg>
+                <!-- Duplicar todos los elementos para efecto infinito -->
+                <!-- HTML (duplicado) -->
+                <div class="flex-shrink-0 group">
+                    <div class="tech-card bg-surface/80 backdrop-blur-lg border border-border rounded-xl p-6 w-52 h-36 my-4 flex items-center gap-4 hover:shadow-xl hover:shadow-orange-500/20 hover:border-orange-500/50">
+                        <div class="w-12 h-12 flex-shrink-0">
+                            <svg viewBox="0 0 24 24" fill="#E34F26" class="w-full h-full">
+                                <path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="text-white font-semibold text-sm">HTML</p>
+                            <p class="text-gray-500 text-xs">Markup</p>
+                        </div>
                     </div>
-                    <span class="text-sm font-medium text-text-secondary group-hover:text-secondary transition-colors">CSS3</span>
                 </div>
 
-                <div class="carousel-item flex-shrink-0 w-32 h-32 bg-surface border border-border rounded-2xl flex flex-col items-center justify-center hover-lift group transition-all duration-300">
-                    <div class="w-12 h-12 mb-3 bg-gradient-to-r from-red-400 to-red-600 rounded-lg flex items-center justify-center group-hover:shadow-neon-red">
-                        <svg class="w-8 h-8 text-white" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M2.149 0l1.986 4.851L2.149 9.665 0 4.851zm19.701 0L20.135 4.851l1.715 4.814L24 4.851zm-9.849 0L13.716 4.851 12.001 9.665 10.285 4.851zm-4.85 2.149L8.866 7 7.151 2.149l1.715 4.851zm9.701 0L15.134 7l1.715-4.851L15.134 7zm-4.851 2.149L13.716 9.665 12.001 4.298l1.715 5.367zm0 9.703L12.001 19.367l1.715-5.366L12.001 14zm-1.715-5.366L10.285 9.665l1.716-5.367L10.285 14zm3.43 0L15.134 9.665l-1.715 5.367L15.134 14zm-6.86 0L7.151 9.665l3.43 4.335L7.151 14zm13.72 0l-3.43-4.335 3.43 5.367L20.851 14z"/>
-                        </svg>
+                <!-- CSS (duplicado) -->
+                <div class="flex-shrink-0 group">
+                    <div class="tech-card bg-surface/80 backdrop-blur-lg border border-border rounded-xl p-6 w-52 h-36 my-4 flex items-center gap-4 hover:shadow-xl hover:shadow-blue-500/20 hover:border-blue-500/50">
+                        <div class="w-12 h-12 flex-shrink-0">
+                            <svg viewBox="0 0 24 24" fill="#1572B6" class="w-full h-full">
+                                <path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm17.09 4.413L5.41 4.41l.213 2.622 10.125.002-.255 2.716h-6.64l.24 2.573h6.182l-.366 3.523-2.91.804-2.956-.81-.188-2.11h-2.61l.29 3.855L12 19.288l5.373-1.53L18.59 4.414z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="text-white font-semibold text-sm">CSS</p>
+                            <p class="text-gray-500 text-xs">Styling</p>
+                        </div>
                     </div>
-                    <span class="text-sm font-medium text-text-secondary group-hover:text-secondary transition-colors">GraphQL</span>
                 </div>
 
-                <div class="carousel-item flex-shrink-0 w-32 h-32 bg-surface border border-border rounded-2xl flex flex-col items-center justify-center hover-lift group transition-all duration-300">
-                    <div class="w-12 h-12 mb-3 bg-gradient-to-r from-green-400 to-green-600 rounded-lg flex items-center justify-center group-hover:shadow-neon-green">
-                        <svg class="w-8 h-8 text-white" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M23.64 11.2c-.45-.07-.84-.07-1.25-.07-.31 0-.67.02-.93.06-.64-.9-1.39-1.73-2.22-2.46 1.93-1.84 2.76-2.76 2.76-2.76.39-.39.39-1.04 0-1.43-.39-.39-1.04-.39-1.43 0 0 0-.92.83-2.76 2.76-.73-.83-1.56-1.58-2.46-2.22.04-.26.06-.62.06-.93 0-.41 0-.8-.07-1.25C15.32.09 14.68 0 14.68 0s-.64.09-.66.91c-.07.45-.07.84-.07 1.25 0 .31.02.67.06.93-.9.64-1.73 1.39-2.46 2.22-1.84-1.93-2.76-2.76-2.76-2.76-.39-.39-1.04-.39-1.43 0-.39.39-.39 1.04 0 1.43 0 0 .83.92 2.76 2.76-.83.73-1.58 1.56-2.22 2.46-.26-.04-.62-.06-.93-.06-.41 0-.8 0-1.25.07C4.68 8.68 4.59 9.32 4.59 9.32s.09.64.91.66c.45.07.84.07 1.25.07.31 0 .67-.02.93-.06.64.9 1.39 1.73 2.22 2.46-1.93 1.84-2.76 2.76-2.76 2.76-.39.39-.39 1.04 0 1.43.39.39 1.04.39 1.43 0 0 0 .92-.83 2.76-2.76.73.83 1.56 1.58 2.46 2.22-.04.26-.06.62-.06.93 0 .41 0 .8.07 1.25.02.82.66.91.66.91s.64-.09.66-.91c.07-.45.07-.84.07-1.25 0-.31-.02-.67-.06-.93.9-.64 1.73-1.39 2.46-2.22 1.84 1.93 2.76 2.76 2.76 2.76.39.39 1.04.39 1.43 0 .39-.39.39-1.04 0-1.43 0 0-.83-.92-2.76-2.76.83-.73 1.58-1.56 2.22-2.46.26.04.62.06.93.06.41 0 .8 0 1.25-.07.82-.02.91-.66.91-.66s-.09-.64-.91-.66zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6 0-1.98 1.62-3.6 3.6-3.6 1.98 0 3.6 1.62 3.6 3.6 0 1.98-1.62 3.6-3.6 3.6z"/>
-                        </svg>
+                <!-- JavaScript (duplicado) -->
+                <div class="flex-shrink-0 group">
+                    <div class="tech-card bg-surface/80 backdrop-blur-lg border border-border rounded-xl p-6 w-52 h-36 my-4 flex items-center gap-4 hover:shadow-xl hover:shadow-yellow-500/20 hover:border-yellow-500/50">
+                        <div class="w-12 h-12 flex-shrink-0">
+                            <svg viewBox="0 0 24 24" fill="#F7DF1E" class="w-full h-full">
+                                <path d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.404-.601-.586-.78-.63-.705-1.469-1.065-2.834-1.034l-.705.089c-.676.165-1.32.525-1.71 1.005-1.14 1.291-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.41-.811-.18-1.26-.586-1.755-1.336l-1.83 1.051c.21.48.45.689.81 1.109 1.74 1.756 6.09 1.666 6.871-1.004.029-.09.24-.705.074-1.65l.046.067zm-8.983-7.245h-2.248c0 1.938-.009 3.864-.009 5.805 0 1.232.063 2.363-.138 2.711-.33.689-1.18.601-1.566.48-.396-.196-.597-.466-.83-.855-.063-.105-.11-.196-.127-.196l-1.825 1.125c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.691 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054 0-4.109 0-6.179l.004-.056z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="text-white font-semibold text-sm">JavaScript</p>
+                            <p class="text-gray-500 text-xs">Programming</p>
+                        </div>
                     </div>
-                    <span class="text-sm font-medium text-text-secondary group-hover:text-secondary transition-colors">D3.js</span>
                 </div>
 
-                <!-- Duplicate items for infinite scroll effect -->
-                <div class="carousel-item flex-shrink-0 w-32 h-32 bg-surface border border-border rounded-2xl flex flex-col items-center justify-center hover-lift group transition-all duration-300">
-                    <div class="w-12 h-12 mb-3 bg-gradient-to-r from-blue-400 to-blue-600 rounded-lg flex items-center justify-center group-hover:shadow-neon-blue">
-                        <svg class="w-8 h-8 text-white" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M14.23 12.004a2.236 2.236 0 0 1-2.235 2.236 2.236 2.236 0 0 1-2.236-2.236 2.236 2.236 0 0 1 2.235-2.236 2.236 2.236 0 0 1 2.236 2.236zm2.648-10.69c-1.346 0-3.107.96-4.888 2.622-1.78-1.653-3.542-2.602-4.887-2.602-.41 0-.783.093-1.106.278-1.375.793-1.683 3.264-.973 6.365C1.98 8.917 0 10.42 0 12.004c0 1.59 1.99 3.097 5.043 4.03-.704 3.113-.39 5.588.988 6.38.32.187.69.275 1.102.275 1.345 0 3.107-.96 4.888-2.624 1.78 1.654 3.542 2.603 4.887 2.603.41 0 .783-.09 1.106-.275 1.374-.792 1.683-3.263.973-6.365C22.02 15.096 24 13.59 24 12.004c0-1.59-1.99-3.097-5.043-4.032.704-3.11.39-5.587-.988-6.38-.318-.184-.688-.277-1.092-.278zm-.005 1.09v.006c.225 0 .406.044.558.127.666.382.955 1.835.73 3.704-.054.46-.142.945-.25 1.44-.96-.236-2.006-.417-3.107-.534-.66-.905-1.345-1.727-2.035-2.447 1.592-1.48 3.087-2.292 4.105-2.295zm-9.77.02c1.012 0 2.514.808 4.11 2.28-.686.72-1.37 1.537-2.02 2.442-1.107.117-2.154.298-3.113.538-.112-.49-.195-.964-.254-1.42-.23-1.868.054-3.32.714-3.707.19-.09.4-.127.563-.132zm4.882 3.05c.455.468.91.992 1.36 1.564-.44-.02-.89-.034-1.345-.034-.46 0-.915.01-1.36.034.44-.572.895-1.096 1.345-1.565zM12 8.1c.74 0 1.477.034 2.202.093.406.582.802 1.203 1.183 1.86.372.64.71 1.29 1.018 1.946-.308.655-.646 1.31-1.013 1.95-.38.66-.773 1.288-1.18 1.87-.728.063-1.466.098-2.21.098-.74 0-1.477-.035-2.202-.093-.406-.582-.802-1.204-1.183-1.86-.372-.64-.71-1.29-1.018-1.946.303-.657.646-1.313 1.013-1.954.38-.66.773-1.286 1.18-1.868.728-.064 1.466-.098 2.21-.098zm-3.635.254c-.24.377-.48.763-.704 1.16-.225.39-.435.782-.635 1.174-.265-.656-.49-1.31-.676-1.947.64-.15 1.315-.283 2.015-.386zm7.26 0c.695.103 1.365.23 2.006.387-.18.632-.405 1.282-.66 1.933-.2-.39-.41-.783-.64-1.174-.225-.392-.465-.774-.705-1.146zm3.063.675c.484.15.944.317 1.375.498 1.732.74 2.852 1.708 2.852 2.476-.005.768-1.125 1.74-2.857 2.475-.42.18-.88.342-1.355.493-.28-.958-.646-1.956-1.1-2.98.45-1.017.81-2.01 1.085-2.964zm-13.395.004c.278.96.645 1.957 1.1 2.98-.45 1.017-.812 2.01-1.086 2.964-.484-.15-.944-.318-1.37-.5-1.732-.737-2.852-1.706-2.852-2.474 0-.768 1.12-1.742 2.852-2.476.42-.18.88-.342 1.356-.494zm11.678 4.28c.265.657.49 1.312.676 1.948-.64.157-1.316.29-2.016.39.24-.375.48-.762.705-1.158.225-.39.435-.788.636-1.18zm-9.945.02c.2.392.41.783.64 1.175.23.39.465.772.705 1.143-.695-.102-1.365-.23-2.006-.386.18-.63.406-1.282.66-1.933zM17.92 16.32c.112.493.2.968.254 1.423.23 1.868-.054 3.32-.714 3.708-.147.09-.338.128-.563.128-1.012 0-2.514-.807-4.11-2.28.686-.72 1.37-1.536 2.02-2.44 1.107-.118 2.154-.3 3.113-.54zm-11.83.01c.96.234 2.006.415 3.107.532.66.905 1.345 1.727 2.035 2.446-1.595 1.483-3.092 2.295-4.11 2.295-.22-.005-.406-.05-.553-.132-.666-.38-.955-1.834-.73-3.703.054-.46.142-.944.25-1.438zm4.56.64c.44.02.89.034 1.345.034.46 0 .915-.01 1.36-.034-.44.572-.895 1.095-1.345 1.565-.455-.47-.91-.993-1.36-1.565z"/>
-                        </svg>
+                <!-- WordPress (duplicado) -->
+                <div class="flex-shrink-0 group">
+                    <div class="tech-card bg-surface/80 backdrop-blur-lg border border-border rounded-xl p-6 w-52 h-36 my-4 flex items-center gap-4 hover:shadow-xl hover:shadow-blue-600/20 hover:border-blue-600/50">
+                        <div class="w-12 h-12 flex-shrink-0">
+                            <svg viewBox="0 0 24 24" fill="#21759B" class="w-full h-full">
+                                <path d="M21.469 6.825c.84 1.537 1.318 3.3 1.318 5.175 0 3.979-2.156 7.456-5.363 9.325l3.295-9.527c.615-1.54.82-2.771.82-3.864 0-.405-.026-.78-.07-1.11m-7.981.105c.647-.03 1.232-.105 1.232-.105.582-.075.514-.93-.067-.899 0 0-1.755.135-2.88.135-1.064 0-2.85-.15-2.85-.15-.585-.03-.661.855-.075.885 0 0 .54.061 1.125.09l1.68 4.605-2.37 7.08L5.354 6.9c.649-.03 1.234-.1 1.234-.1.585-.075.516-.93-.065-.896 0 0-1.746.138-2.874.138-.2 0-.438-.008-.69-.015C4.911 3.15 8.235 1.215 12 1.215c2.809 0 5.365 1.072 7.286 2.833-.046-.003-.091-.009-.141-.009-1.06 0-1.812.923-1.812 1.914 0 .89.513 1.643 1.06 2.531.411.72.89 1.643.89 2.977 0 .915-.354 1.994-.821 3.479l-1.075 3.585-3.9-11.61.001.014zM12 22.784c-1.059 0-2.081-.153-3.048-.437l3.237-9.406 3.315 9.087c.024.053.05.101.078.149-1.12.393-2.325.609-3.582.609M1.211 12c0-1.564.336-3.05.935-4.39L7.29 21.709C3.694 19.96 1.212 16.271 1.211 12M12 0C5.385 0 0 5.385 0 12s5.385 12 12 12 12-5.385 12-12S18.615 0 12 0"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="text-white font-semibold text-sm">WordPress</p>
+                            <p class="text-gray-500 text-xs">CMS</p>
+                        </div>
                     </div>
-                    <span class="text-sm font-medium text-text-secondary group-hover:text-secondary transition-colors">React</span>
                 </div>
 
-                <div class="carousel-item flex-shrink-0 w-32 h-32 bg-surface border border-border rounded-2xl flex flex-col items-center justify-center hover-lift group transition-all duration-300">
-                    <div class="w-12 h-12 mb-3 bg-gradient-to-r from-black to-gray-800 rounded-lg flex items-center justify-center group-hover:shadow-neon-gray">
-                        <svg class="w-8 h-8 text-white" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M11.572 0c-.176 0-.31.001-.358.007a19.76 19.76 0 0 1-.364.033C7.443.346 4.25 2.185 2.228 5.012a11.875 11.875 0 0 0-2.119 5.243c-.096.659-.108.854-.108 1.747s.012 1.089.108 1.748c.652 4.506 3.86 8.292 8.209 9.695.779.25 1.6.422 2.534.525.363.04 1.935.04 2.299 0 1.611-.178 2.977-.577 4.323-1.264.207-.106.247-.134.219-.158-.02-.013-.9-1.193-1.955-2.62l-1.919-2.592-2.404-3.558a338.739 338.739 0 0 0-2.422-3.556c-.009-.002-.018 1.579-.023 3.51-.007 3.38-.01 3.515-.052 3.595a.426.426 0 0 1-.206.214c-.075.037-.14.044-.495.044H7.81l-.108-.068a.438.438 0 0 1-.157-.171l-.05-.106.006-4.703.007-4.705.072-.092a.645.645 0 0 1 .174-.143c.096-.047.134-.051.54-.051.478 0 .558.018.682.154.035.038 1.337 1.999 2.895 4.361a10760.433 10760.433 0 0 0 4.735 7.17l1.9 2.879.096-.063a12.317 12.317 0 0 0 2.466-2.163 11.944 11.944 0 0 0 2.824-6.134c.096-.66.108-.854.108-1.748 0-.893-.012-1.088-.108-1.747C19.146 4.65 16.458 1.701 12.9.511 12.15.249 11.294.126 10.438.07c-.138-.01-.278-.015-.406-.017-.297 0-.895.01-1.309.044z"/>
-                        </svg>
+                <!-- Framer (duplicado) -->
+                <div class="flex-shrink-0 group">
+                    <div class="tech-card bg-surface/80 backdrop-blur-lg border border-border rounded-xl p-6 w-52 h-36 my-4 flex items-center gap-4 hover:shadow-xl hover:shadow-purple-500/20 hover:border-purple-500/50">
+                        <div class="w-12 h-12 flex-shrink-0">
+                            <svg viewBox="0 0 24 24" fill="#0055FF" class="w-full h-full">
+                                <path d="M4 0h16v8h-8zM4 8h8l8 8H4zM4 16h8v8z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="text-white font-semibold text-sm">Framer</p>
+                            <p class="text-gray-500 text-xs">Prototyping</p>
+                        </div>
                     </div>
-                    <span class="text-sm font-medium text-text-secondary group-hover:text-secondary transition-colors">Next.js</span>
+                </div>
+
+                <!-- Tailwind CSS (duplicado) -->
+                <div class="flex-shrink-0 group">
+                    <div class="tech-card bg-surface/80 backdrop-blur-lg border border-border rounded-xl p-6 w-52 h-36 my-4 flex items-center gap-4 hover:shadow-xl hover:shadow-cyan-500/20 hover:border-cyan-500/50">
+                        <div class="w-12 h-12 flex-shrink-0">
+                            <svg viewBox="0 0 24 24" fill="#06B6D4" class="w-full h-full">
+                                <path d="M12.001,4.8c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 C13.666,10.618,15.027,12,18.001,12c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C16.337,6.182,14.976,4.8,12.001,4.8z M6.001,12c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 c1.177,1.194,2.538,2.576,5.512,2.576c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C10.337,13.382,8.976,12,6.001,12z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="text-white font-semibold text-sm">Tailwind CSS</p>
+                            <p class="text-gray-500 text-xs">Utility-first CSS</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- GitHub (duplicado) -->
+                <div class="flex-shrink-0 group">
+                    <div class="tech-card bg-surface/80 backdrop-blur-lg border border-border rounded-xl p-6 w-52 h-36 my-4 flex items-center gap-4 hover:shadow-xl hover:shadow-gray-500/20 hover:border-gray-500/50">
+                        <div class="w-12 h-12 flex-shrink-0">
+                            <svg viewBox="0 0 24 24" fill="#FFFFFF" class="w-full h-full">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="text-white font-semibold text-sm">GitHub</p>
+                            <p class="text-gray-500 text-xs">Version Control</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- React (duplicado) -->
+                <div class="flex-shrink-0 group">
+                    <div class="tech-card bg-surface/80 backdrop-blur-lg border border-border rounded-xl p-6 w-52 h-36 my-4 flex items-center gap-4 hover:shadow-xl hover:shadow-cyan-400/20 hover:border-cyan-400/50">
+                        <div class="w-12 h-12 flex-shrink-0">
+                            <svg viewBox="0 0 24 24" fill="#61DAFB" class="w-full h-full">
+                                <path d="M14.23 12.004a2.236 2.236 0 0 1-2.235 2.236 2.236 2.236 0 0 1-2.236-2.236 2.236 2.236 0 0 1 2.235-2.236 2.236 2.236 0 0 1 2.236 2.236zm2.648-10.69c-1.346 0-3.107.96-4.888 2.622-1.78-1.653-3.542-2.602-4.887-2.602-.41 0-.783.093-1.106.278-1.375.793-1.683 3.264-.973 6.365C1.98 8.917 0 10.42 0 12.004c0 1.59 1.99 3.097 5.043 4.03-.704 3.113-.39 5.588.988 6.38.32.187.69.275 1.102.275 1.345 0 3.107-.96 4.888-2.624 1.78 1.654 3.542 2.603 4.887 2.603.41 0 .783-.09 1.106-.275 1.374-.792 1.683-3.263.973-6.365C22.02 15.096 24 13.59 24 12.004c0-1.59-1.99-3.097-5.043-4.032.704-3.11.39-5.587-.988-6.38-.318-.184-.688-.277-1.092-.278zm-.005 1.09v.006c.225 0 .406.044.558.127.666.382.955 1.835.73 3.704-.054.46-.142.945-.25 1.44-.96-.236-2.006-.417-3.107-.534-.66-.905-1.345-1.727-2.035-2.447 1.592-1.48 3.087-2.292 4.105-2.295zm-9.77.02c1.012 0 2.514.808 4.11 2.28-.686.72-1.37 1.537-2.02 2.442-1.107.117-2.154.298-3.113.538-.112-.49-.195-.964-.254-1.42-.23-1.868.054-3.32.714-3.707.19-.09.4-.127.563-.132zm4.882 3.05c.455.468.91.992 1.36 1.564-.44-.02-.89-.034-1.345-.034-.46 0-.915.01-1.36.034.44-.572.895-1.096 1.345-1.565zM12 8.1c.74 0 1.477.034 2.202.093.406.582.802 1.203 1.183 1.86.372.64.71 1.29 1.018 1.946-.308.655-.646 1.31-1.013 1.95-.38.66-.773 1.288-1.18 1.87-.728.063-1.466.098-2.21.098-.74 0-1.477-.035-2.202-.093-.406-.582-.802-1.204-1.183-1.86-.372-.64-.71-1.29-1.018-1.946.303-.657.646-1.313 1.013-1.954.38-.66.773-1.286 1.18-1.868.728-.064 1.466-.098 2.21-.098zm-3.635.254c-.24.377-.48.763-.704 1.16-.225.39-.435.782-.635 1.174-.265-.656-.49-1.31-.676-1.947.64-.15 1.315-.283 2.015-.386zm7.26 0c.695.103 1.365.23 2.006.387-.18.632-.405 1.282-.66 1.933-.2-.39-.41-.783-.64-1.174-.225-.392-.465-.774-.705-1.146zm3.063.675c.484.15.944.317 1.375.498 1.732.74 2.852 1.708 2.852 2.476-.005.768-1.125 1.74-2.857 2.475-.42.18-.88.342-1.355.493-.28-.958-.646-1.956-1.1-2.98.45-1.017.81-2.01 1.085-2.964zm-13.395.004c.278.96.645 1.957 1.1 2.98-.45 1.017-.812 2.01-1.086 2.964-.484-.15-.944-.318-1.37-.5-1.732-.737-2.852-1.706-2.852-2.474 0-.768 1.12-1.742 2.852-2.476.42-.18.88-.342 1.356-.494zm11.678 4.28c.265.657.49 1.312.676 1.948-.64.157-1.316.29-2.016.39.24-.375.48-.762.705-1.158.225-.39.435-.788.636-1.18zm-9.945.02c.2.392.41.783.64 1.175.23.39.465.772.705 1.143-.695-.102-1.365-.23-2.006-.386.18-.63.406-1.282.66-1.933zM17.92 16.32c.112.493.2.968.254 1.423.23 1.868-.054 3.32-.714 3.708-.147.09-.338.128-.563.128-1.012 0-2.514-.807-4.11-2.28.686-.72 1.37-1.536 2.02-2.44 1.107-.118 2.154-.3 3.113-.54zm-11.83.01c.96.234 2.006.415 3.107.532.66.905 1.345 1.727 2.035 2.446-1.595 1.483-3.092 2.295-4.11 2.295-.22-.005-.406-.05-.553-.132-.666-.38-.955-1.834-.73-3.703.054-.46.142-.944.25-1.438zm4.56.64c.44.02.89.034 1.345.034.46 0 .915-.01 1.36-.034-.44.572-.895 1.095-1.345 1.565-.455-.47-.91-.993-1.36-1.565z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="text-white font-semibold text-sm">React</p>
+                            <p class="text-gray-500 text-xs">UI Library</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Windsurf (duplicado) -->
+                <div class="flex-shrink-0 group">
+                    <div class="tech-card bg-surface/80 backdrop-blur-lg border border-border rounded-xl p-6 w-52 h-36 my-4 flex items-center gap-4 hover:shadow-xl hover:shadow-teal-500/20 hover:border-teal-500/50">
+                        <div class="w-12 h-12 flex-shrink-0">
+                            <svg viewBox="0 0 24 24" fill="#14B8A6" class="w-full h-full">
+                                <path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5zm0 2.18l8 3.6v8.72c0 4.7-3.07 9.09-8 10.5-4.93-1.41-8-5.8-8-10.5V7.78l8-3.6z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="text-white font-semibold text-sm">Windsurf</p>
+                            <p class="text-gray-500 text-xs">AI Development</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -262,22 +414,30 @@
                     <div class="w-full md:w-5/12 md:text-right">
                         <div class="card hover-lift p-8">
                             <div class="mb-6">
-                                <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?q=80&w=2074&auto=format&fit=crop" alt="NeuroTech AI Platform" class="w-full h-48 object-cover rounded-lg" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop'; this.onerror=null;" />
+                                <img src="../resources/Roofing_orange.webp" alt="myroofimprovement.com website" class="w-full h-64 object-cover rounded-lg" loading="lazy" />
                             </div>
-                            <div class="text-sm text-accent mb-2">Q4 2024</div>
-                            <h3 class="text-2xl font-bold mb-4 text-gradient">NeuroTech AI Platform</h3>
+                        
+                            <div class="mb-4 md:text-right">
+                                <a href="https://myroofimprovement.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-secondary hover:text-accent transition-colors duration-300">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                                    </svg>
+                                    <span class="text-sm font-medium">Ver sitio web</span>
+                                </a>
+                            </div>
+                            <h3 class="text-2xl font-bold mb-4 text-gradient">JC&C Roofing Company</h3>
                             <p class="text-text-secondary mb-6">
-                                Dashboard revolucionario de interfaz neuronal impulsado por IA con visualización de actividad cerebral en tiempo real y renderizado 3D de red neuronal basado en WebGL.
+                                Rediseño integral y construcción de sitio web con posicionamiento SEO avanzado, optimización de performance y caché, y generación inteligente de contenido asistido por IA.
                             </p>
                             <div class="flex flex-wrap gap-2 mb-4 md:justify-end">
-                                <span class="px-3 py-1 bg-secondary/20 text-secondary rounded-full text-sm">React</span>
-                                <span class="px-3 py-1 bg-secondary/20 text-secondary rounded-full text-sm">Three.js</span>
-                                <span class="px-3 py-1 bg-secondary/20 text-secondary rounded-full text-sm">WebGL</span>
-                                <span class="px-3 py-1 bg-secondary/20 text-secondary rounded-full text-sm">TensorFlow</span>
+                                <span class="px-3 py-1 bg-secondary/20 text-secondary rounded-full text-sm">Wordpress</span>
+                                <span class="px-3 py-1 bg-secondary/20 text-secondary rounded-full text-sm">Elementor</span>
+                                <span class="px-3 py-1 bg-secondary/20 text-secondary rounded-full text-sm">Object caché Pro</span>
+                                <span class="px-3 py-1 bg-secondary/20 text-secondary rounded-full text-sm">Semrush</span>
                             </div>
-                            <div class="text-sm text-text-secondary">
+                            <!-- <div class="text-sm text-text-secondary">
                                 <strong class="text-accent">Resultado:</strong> 85% de mejora en la eficiencia de visualización de datos
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                     
@@ -297,18 +457,26 @@
                     <div class="w-full md:w-5/12">
                         <div class="card hover-lift p-8">
                             <div class="mb-6">
-                                <img src="https://images.unsplash.com/photo-1573164574572-cb89e39749b4?q=80&w=2069&auto=format&fit=crop" alt="Quantum Finance Dashboard" class="w-full h-48 object-cover rounded-lg" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop'; this.onerror=null;" />
+                                <img src="../resources/savvy_project.webp" alt="Savvy Post Marketing website" class="w-full h-64 object-cover rounded-lg" loading="lazy" />
                             </div>
-                            <div class="text-sm text-accent mb-2">Q2 2024</div>
-                            <h3 class="text-2xl font-bold mb-4 text-gradient">Quantum Finance Dashboard</h3>
+                        
+                            <div class="mb-4">
+                                <a href="https://www.savvypostmarketing.com/es" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-secondary hover:text-accent transition-colors duration-300">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                                    </svg>
+                                    <span class="text-sm font-medium">Ver sitio web</span>
+                                </a>
+                            </div>
+                            <h3 class="text-2xl font-bold mb-4 text-gradient">Savvy Post Marketing</h3>
                             <p class="text-text-secondary mb-6">
-                                Plataforma de trading de criptomonedas de próxima generación con algoritmos inspirados en cuántica, análisis de mercado en tiempo real y visualización inmersiva de portafolio 3D.
+                                Desarrollé sitios web funcionales para diversos sectores del mercado estadounidense, optimizando servidores y entornos web para garantizar seguridad, rendimiento y escalabilidad mediante tecnologías web y CMS empresariales.
                             </p>
                             <div class="flex flex-wrap gap-2 mb-4">
-                                <span class="px-3 py-1 bg-accent/20 text-accent rounded-full text-sm">Next.js</span>
-                                <span class="px-3 py-1 bg-accent/20 text-accent rounded-full text-sm">D3.js</span>
-                                <span class="px-3 py-1 bg-accent/20 text-accent rounded-full text-sm">WebSockets</span>
-                                <span class="px-3 py-1 bg-accent/20 text-accent rounded-full text-sm">Node.js</span>
+                                <span class="px-3 py-1 bg-accent/20 text-accent rounded-full text-sm">HTML</span>
+                                <span class="px-3 py-1 bg-accent/20 text-accent rounded-full text-sm">JavaScript</span>
+                                <span class="px-3 py-1 bg-accent/20 text-accent rounded-full text-sm">Wordpress</span>
+                                <span class="px-3 py-1 bg-accent/20 text-accent rounded-full text-sm">CSS</span>
                             </div>
                             <div class="text-sm text-text-secondary">
                                 <strong class="text-accent">Resultado:</strong> $2M+ en volumen de trading en el primer mes
@@ -322,22 +490,30 @@
                     <div class="w-full md:w-5/12 md:text-right">
                         <div class="card hover-lift p-8">
                             <div class="mb-6">
-                                <img src="https://images.unsplash.com/photo-1586953208448-b95a79798f07?q=80&w=2070&auto=format&fit=crop" alt="EcoSphere VR Experience" class="w-full h-48 object-cover rounded-lg" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop'; this.onerror=null;" />
+                                <img src="../resources/elchory_project.webp" alt="Proyecto universitario de prototipo de website para la marca El Chory" class="w-full h-64 object-cover rounded-lg" loading="lazy" />
                             </div>
-                            <div class="text-sm text-accent mb-2">Q4 2023</div>
-                            <h3 class="text-2xl font-bold mb-4 text-gradient">EcoSphere VR Experience</h3>
+                        
+                            <div class="mb-4 md:text-right">
+                                <a href="https://webg51.sg-host.com/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-secondary hover:text-accent transition-colors duration-300">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                                    </svg>
+                                    <span class="text-sm font-medium">Ver sitio web</span>
+                                </a>
+                            </div>
+                            <h3 class="text-2xl font-bold mb-4 text-gradient">El Chory prototipo de web</h3>
                             <p class="text-text-secondary mb-6">
                                 Plataforma educativa ambiental de realidad virtual inmersiva con ecosistemas fotorrealistas, simulaciones climáticas interactivas e integración de datos ambientales en tiempo real.
                             </p>
                             <div class="flex flex-wrap gap-2 mb-4 md:justify-end">
-                                <span class="px-3 py-1 bg-secondary/20 text-secondary rounded-full text-sm">Unity</span>
-                                <span class="px-3 py-1 bg-secondary/20 text-secondary rounded-full text-sm">WebXR</span>
-                                <span class="px-3 py-1 bg-secondary/20 text-secondary rounded-full text-sm">A-Frame</span>
-                                <span class="px-3 py-1 bg-secondary/20 text-secondary rounded-full text-sm">AWS</span>
+                                <span class="px-3 py-1 bg-secondary/20 text-secondary rounded-full text-sm">Wordpress</span>
+                                <span class="px-3 py-1 bg-secondary/20 text-secondary rounded-full text-sm">Elementor</span>
+                                <span class="px-3 py-1 bg-secondary/20 text-secondary rounded-full text-sm">JavaScript</span>
+                                <span class="px-3 py-1 bg-secondary/20 text-secondary rounded-full text-sm">SiteGround</span>
                             </div>
-                            <div class="text-sm text-text-secondary">
+                            <!-- <div class="text-sm text-text-secondary">
                                 <strong class="text-accent">Resultado:</strong> 50,000+ estudiantes educados globalmente
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                     
@@ -357,22 +533,30 @@
                     <div class="w-full md:w-5/12">
                         <div class="card hover-lift p-8">
                             <div class="mb-6">
-                                <img src="https://images.unsplash.com/photo-1559526324-4b87b5e36e44?q=80&w=2070&auto=format&fit=crop" alt="MedTech Innovation Hub" class="w-full h-48 object-cover rounded-lg" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop'; this.onerror=null;" />
+                                <img src="../resources/luholife_e-commerce.webp" alt="Imagen la tienda en linea de la marca luholife.com" class="w-full h-64 object-cover rounded-lg" loading="lazy" />
                             </div>
-                            <div class="text-sm text-accent mb-2">Q2 2023</div>
-                            <h3 class="text-2xl font-bold mb-4 text-gradient">MedTech Innovation Hub</h3>
+                        
+                            <div class="mb-4">
+                                <a href="https://www.luholife.com/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-secondary hover:text-accent transition-colors duration-300">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                                    </svg>
+                                    <span class="text-sm font-medium">Ver sitio web</span>
+                                </a>
+                            </div>
+                            <h3 class="text-2xl font-bold mb-4 text-gradient">LuhoLife El Salvador</h3>
                             <p class="text-text-secondary mb-6">
-                                Sistema avanzado de gestión de dispositivos médicos con integración IoT, algoritmos de mantenimiento predictivo y visualización 3D de equipos para instalaciones de salud.
+                                Desarrollé la tienda en línea de Luholife, integrando plugins de e-commerce y chatbot para optimizar la experiencia de usuario y la interacción digital.
                             </p>
                             <div class="flex flex-wrap gap-2 mb-4">
-                                <span class="px-3 py-1 bg-accent/20 text-accent rounded-full text-sm">Vue.js</span>
-                                <span class="px-3 py-1 bg-accent/20 text-accent rounded-full text-sm">IoT</span>
-                                <span class="px-3 py-1 bg-accent/20 text-accent rounded-full text-sm">Machine Learning</span>
-                                <span class="px-3 py-1 bg-accent/20 text-accent rounded-full text-sm">MongoDB</span>
+                                <span class="px-3 py-1 bg-accent/20 text-accent rounded-full text-sm">Divi Builder</span>
+                                <span class="px-3 py-1 bg-accent/20 text-accent rounded-full text-sm">Wordpress</span>
+                                <span class="px-3 py-1 bg-accent/20 text-accent rounded-full text-sm">HTML</span>
+                                <span class="px-3 py-1 bg-accent/20 text-accent rounded-full text-sm">PostgreSQL</span>
                             </div>
-                            <div class="text-sm text-text-secondary">
+                            <!-- <div class="text-sm text-text-secondary">
                                 <strong class="text-accent">Resultado:</strong> 40% de reducción en tiempo de inactividad del equipo
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -443,7 +627,7 @@
             </div>
 
             <div class="text-center mt-12">
-                <a href="portfolio_interactive_project_showcase.html" class="btn-primary text-lg px-8 py-4">
+                <a href="portfolio.html" class="btn-primary text-lg px-8 py-4">
                     Ver Todos los Proyectos
                 </a>
             </div>
@@ -719,7 +903,7 @@
                         >
                             Enviar Mensaje
                         </button>
-                        <a href="portfolio_interactive_project_showcase.html" class="border border-secondary text-secondary hover:bg-secondary hover:text-primary px-8 py-4 rounded-lg transition-all duration-300 hover-lift neon-glow-orange w-full sm:w-auto text-center">
+                        <a href="portfolio.html" class="border border-secondary text-secondary hover:bg-secondary hover:text-primary px-8 py-4 rounded-lg transition-all duration-300 hover-lift neon-glow-orange w-full sm:w-auto text-center">
                             Ver Portafolio
                         </a>
                     </div>
@@ -734,8 +918,8 @@
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
                 <div class="col-span-1 md:col-span-2">
                     <div class="flex items-center mb-4">
-                        <span class="text-2xl font-bold text-secondary neon-glow-orange">rxpana</span>
-                        <span class="ml-2 text-text-secondary">Portfolio</span>
+                        <img src="../resources/White_logo_horiz.png" alt="rxpana logo" class="h-12">
+                        <span class="text-text-secondary ml-2">Portafolio</span>
                     </div>
                     <p class="text-text-secondary mb-6 max-w-md">
                         Iluminando Posibilidades Digitales a través de experiencias web 3D de vanguardia y soluciones digitales premium.
@@ -762,9 +946,9 @@
                 <div>
                     <h4 class="font-semibold mb-4">Navegación</h4>
                     <ul class="space-y-2 text-text-secondary">
-                        <li><a href="homepage_premium_digital_portfolio.html" class="hover:text-secondary transition-colors duration-300">Inicio</a></li>
-                        <li><a href="portfolio_interactive_project_showcase.html" class="hover:text-secondary transition-colors duration-300">Portafolio</a></li>
-                        <li><a href="about_digital_craftsperson_story.html" class="hover:text-secondary transition-colors duration-300">Sobre mí</a></li>
+                        <li><a href="landing.html" class="hover:text-secondary transition-colors duration-300">Inicio</a></li>
+                        <li><a href="portfolio.html" class="hover:text-secondary transition-colors duration-300">Portafolio</a></li>
+                        <li><a href="about.html" class="hover:text-secondary transition-colors duration-300">Sobre mí</a></li>
                         <!-- <li><a href="lab_creative_experiments_hub.html" class="hover:text-secondary transition-colors duration-300">Laboratorio</a></li> -->
                     </ul>
                 </div>
@@ -775,7 +959,7 @@
                         <li><a href="javascript:void(0)" class="hover:text-secondary transition-colors duration-300">Desarrollo Web</a></li>
                         <li><a href="javascript:void(0)" class="hover:text-secondary transition-colors duration-300">Experiencias 3D</a></li>
                         <li><a href="javascript:void(0)" class="hover:text-secondary transition-colors duration-300">Estrategia Digital</a></li>
-                        <li><a href="contact_multi_touch_engagement_hub.html" class="hover:text-secondary transition-colors duration-300">Contacto</a></li>
+                        <li><a href="contact.html" class="hover:text-secondary transition-colors duration-300">Contacto</a></li>
                     </ul>
                 </div>
             </div>
@@ -1115,11 +1299,57 @@
         }, 5000);
     }
 
+    // Typewriter effect
+    function initTypewriter() {
+        const typewriterElement = document.getElementById('typewriter');
+        const text = 'Portafolio.';
+        let charIndex = 0;
+        let isDeleting = false;
+        let isPaused = false;
+        
+        function type() {
+            if (isPaused) {
+                setTimeout(type, 2500); // Pausa de 2.5 segundos cuando termina de escribir
+                isPaused = false;
+                return;
+            }
+            
+            if (!isDeleting && charIndex < text.length) {
+                // Escribiendo
+                typewriterElement.textContent = text.substring(0, charIndex + 1);
+                charIndex++;
+                // Velocidad variable: más rápido al principio, más lento al final
+                const speed = charIndex < text.length - 1 ? Math.random() * 100 + 80 : 200;
+                setTimeout(type, speed);
+            } else if (!isDeleting && charIndex === text.length) {
+                // Terminó de escribir, pausa antes de borrar
+                isPaused = true;
+                isDeleting = true;
+                setTimeout(type, 2500);
+            } else if (isDeleting && charIndex > 0) {
+                // Borrando
+                typewriterElement.textContent = text.substring(0, charIndex - 1);
+                charIndex--;
+                // Velocidad de borrado más rápida y variable
+                const speed = Math.random() * 50 + 40;
+                setTimeout(type, speed);
+            } else if (isDeleting && charIndex === 0) {
+                // Terminó de borrar, empieza de nuevo
+                isDeleting = false;
+                setTimeout(type, 800); // Pausa antes de empezar a escribir de nuevo
+            }
+        }
+        
+        // Iniciar el efecto después de un pequeño delay
+        setTimeout(type, 1200);
+    }
+
     document.addEventListener('DOMContentLoaded', () => {
         initTimelineAnimation();
         initTechCarousel();
         initCustomCursor();
         initContactForm();
+        initTypewriter();
     });
 
     // Add loading animation
