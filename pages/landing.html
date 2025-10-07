@@ -3,15 +3,14 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>rxpana studio</title>
+    <title>rxpana landing</title>
     <meta name="description" content="Iluminando Posibilidades Digitales a través de experiencias web 3D de vanguardia y soluciones digitales premium. Transforma tu visión en una realidad digital extraordinaria." />
     <link rel="stylesheet" href="../css/main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fneonportf9496back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.8"></script>
 </head>
 <body class="bg-background text-text-primary overflow-x-hidden">
-    <!-- Floating Navigation (Desktop) -->
+    <!-- Desktop) -->
     <nav id="floating-nav" class="hidden md:flex fixed top-6 left-1/2 transform -translate-x-1/2 z-50 bg-surface/80 backdrop-blur-lg border border-border rounded-2xl px-8 py-4 transition-all duration-300 ease-out">
         <div class="flex items-center justify-between w-full space-x-8">
             <a href="landing.html"><img src="../resources/FullColor_logo_horiz.png" alt="rxpana logo" class="h-12"></a>
@@ -24,7 +23,7 @@
         </div>
     </nav>
 
-    <!-- Mobile Navigation -->
+    <!-- Mobile -->
     <nav class="md:hidden fixed top-6 left-1/2 transform -translate-x-1/2 z-50 bg-surface/80 backdrop-blur-lg border border-border rounded-2xl px-8 py-4 w-[90vw] max-w-md">
         <div class="flex items-center justify-between gap-6">
             <a href="landing.html" class="flex-shrink-0"><img src="../resources/toon_rxpana.png" alt="rxpana logo" class="h-12 w-auto object-contain"></a>
@@ -67,11 +66,11 @@
         </div>
 
         <!-- HERO DE INICIO -->
-        <div class="relative z-10 text-center px-6 max-w-6xl mx-auto pt-32 md:pt-0">
-            <img src="../resources/photo_rxpana.png" alt="" class="mx-auto w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 rounded-full object-cover mt-12 md:mt-0 mb-4 animate-pop">
-            <div class="inline-block bg-surface border border-border text-text-primary rounded-xl shadow-lg px-6 py-3 md:px-4 md:py-2 font-medium text-lg md:text-sm mb-6 -mt-2 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:border-secondary cursor-default w-auto">
-                Web Developer
-            </div>
+        <div class="relative z-10 text-center px-6 max-w-6xl mx-auto pt-36 sm:pt-32 md:pt-0">
+            <!-- Spacer para móvil -->
+            <div class="h-24 mb-8 md:hidden"></div>
+            <img src="../resources/photo_rxpana.png" alt="" class="mx-auto w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 rounded-full object-cover md:mt-0 mb-4 animate-pop">
+            
             <h1 class="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold mb-6 text-gradient animate-fade-in hero-text" data-cursor="wave">
                 <span id="typewriter"></span><span class="typewriter-cursor">|</span>
             </h1>
@@ -88,7 +87,7 @@
             </div>
         </div>
 
-        <!-- Cursor animado personalizado -->
+        <!-- Cursor animado -->
         <div id="custom-cursor" class="custom-cursor">
             <div class="cursor-hand">👋</div>
         </div>
@@ -101,6 +100,7 @@
         </div>
     </section>
 
+    <br><br>
 <!-- Stack de Desarrollo -->
 <section class="py-24 px-6 bg-[#0a0a0a]">
     <div class="max-w-7xl mx-auto">
@@ -264,7 +264,7 @@
                         </div>
                         <div>
                             <p class="text-white font-semibold text-sm">HTML</p>
-                            <p class="text-gray-500 text-xs">Markup</p>
+                            <p class="text-gray-500 text-xs">duplicado</p>
                         </div>
                     </div>
                 </div>
@@ -1098,7 +1098,7 @@
         updateCursor();
     }
 
-    // Enhanced Technologies Carousel Animation
+    // Configuracion Carousel Animation
     function initTechCarousel() {
         const carousel = document.getElementById('tech-carousel');
         if (!carousel) return;
@@ -1221,7 +1221,7 @@
     });
 
     // Initialize all animations when DOM is loaded
-    // Contact Form Handler
+    // Formulario 
     function initContactForm() {
         const form = document.getElementById('contact-form');
         if (!form) return;
@@ -1299,7 +1299,7 @@
         }, 5000);
     }
 
-    // Typewriter effect
+    // Efecto Typewhiter
     function initTypewriter() {
         const typewriterElement = document.getElementById('typewriter');
         const text = 'Bienvenidos a mi portafolio';
@@ -1352,9 +1352,33 @@
         initTypewriter();
     });
 
-    // Add loading animation
+    // Velocidad carousel
+    function initInfiniteCarousel() {
+        const carousel = document.querySelector('.animate-scroll-infinite');
+        if (!carousel) return;
+
+        // Clone all items for seamless infinite effect
+        const items = carousel.querySelectorAll('.group');
+        items.forEach(item => {
+            const clone = item.cloneNode(true);
+            carousel.appendChild(clone);
+        });
+
+        // Initialize infinite carousel animation
+        const animation = carousel.animate([
+            { transform: 'translateX(0)' },
+            { transform: `translateX(-${carousel.offsetWidth}px)` }
+        ], {
+            duration: 70000,
+            iterations: Infinity,
+            easing: 'linear'
+        });
+    }
+
+    // Add loading animation and initialize carousel
     window.addEventListener('load', () => {
         document.body.classList.add('loaded');
+        initInfiniteCarousel();
     });
 </script>
 <script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>

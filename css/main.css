@@ -2270,8 +2270,17 @@ code, pre {
 }
 
 .animate-scroll-infinite {
-  animation: scroll-infinite 30s linear infinite;
+  display: flex;
+  width: max-content;
+  animation: scroll-infinite 15s linear infinite;
   will-change: transform;
+}
+
+/* Versión móvil más rápida */
+@media (max-width: 768px) {
+  .animate-scroll-infinite {
+    animation-duration: 12s;
+  }
 }
 
 /* Pause animation on hover over the container */
