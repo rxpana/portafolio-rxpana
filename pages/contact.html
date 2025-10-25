@@ -8,10 +8,9 @@
     <link rel="stylesheet" href="../css/main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fneonportf9496back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.8"></script>
 </head>
 <body class="bg-background text-text-primary overflow-x-hidden">
-    <!-- Floating Navigation (Desktop) -->
+    <!-- Navegación -->
     <nav id="floating-nav" class="hidden md:flex fixed top-6 left-1/2 transform -translate-x-1/2 z-50 bg-surface/80 backdrop-blur-lg border border-border rounded-2xl px-8 py-4 transition-all duration-300 ease-out">
         <div class="flex items-center justify-between w-full space-x-8">
             <a href="landing.html"><img src="../resources/FullColor_logo_horiz.png" alt="rxpana logo" class="h-12"></a>
@@ -47,12 +46,17 @@
         </div>
     </div>
 
-    <!-- Hero Section -->
-    <section class="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
-        <!-- Animated Background Particles -->
-        <div id="particles-container" class="absolute inset-0 z-0">
-            <div class="particle absolute w-2 h-2 bg-secondary rounded-full opacity-60 animate-pulse" style="top: 20%; left: 10%; animation-delay: 0s;"></div>
-            <div class="particle absolute w-1 h-1 bg-accent rounded-full opacity-40 animate-pulse" style="top: 30%; left: 80%; animation-delay: 1s;"></div>
+    <!-- Contenido principal -->
+    <main>
+        <!-- Sección Hero -->
+        <section class="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+            <!-- Animated Background Particles -->
+            <div id="particles-container" class="absolute inset-0 z-0">
+                <div class="particle absolute w-2 h-2 bg-secondary rounded-full opacity-60 animate-pulse" style="top: 20%; left: 10%; animation-delay: 0s;"></div>
+                <div class="particle absolute w-1 h-1 bg-accent rounded-full opacity-40 animate-pulse" style="top: 30%; left: 80%; animation-delay: 1s;"></div>
+                <div class="particle absolute w-3 h-3 bg-secondary rounded-full opacity-30 animate-pulse" style="top: 60%; left: 15%; animation-delay: 2s;"></div>
+                <div class="particle absolute w-1 h-1 bg-accent rounded-full opacity-50 animate-pulse" style="top: 80%; left: 70%; animation-delay: 0.5s;"></div>
+                <div class="particle absolute w-2 h-2 bg-secondary rounded-full opacity-40 animate-pulse" style="top: 40%; left: 90%; animation-delay: 1.5s;"></div>
             <div class="particle absolute w-3 h-3 bg-secondary rounded-full opacity-30 animate-pulse" style="top: 60%; left: 15%; animation-delay: 2s;"></div>
             <div class="particle absolute w-1 h-1 bg-accent rounded-full opacity-50 animate-pulse" style="top: 80%; left: 70%; animation-delay: 0.5s;"></div>
             <div class="particle absolute w-2 h-2 bg-secondary rounded-full opacity-40 animate-pulse" style="top: 40%; left: 90%; animation-delay: 1.5s;"></div>
@@ -65,6 +69,13 @@
         </div>
 
         <div class="relative z-10 text-center px-6 max-w-6xl mx-auto">
+
+            <!-- Current Availability Status -->
+            <div class="inline-flex items-center bg-surface/50 border border-success rounded-full px-6 py-3 mb-8 animate-slide-up" style="animation-delay: 0.3s;">
+                <div class="w-3 h-3 bg-success rounded-full mr-3 animate-pulse"></div>
+                <span class="text-success font-medium">Actualmente Disponible - Próxima Disponibilidad: Diciembre 2025</span>
+            </div>
+
             <h1 class="text-5xl md:text-7xl font-bold mb-6 text-gradient animate-fade-in">
                 Creemos algo<br />extraordinario
             </h1>
@@ -80,7 +91,17 @@
         </div>
     </section>
 
-    <!-- Engagement Pathways Section -->
+    <!-- Artículo: Vías de Compromiso -->
+    <article class="py-20 px-6">
+        <div class="max-w-7xl mx-auto">
+            <header class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 text-gradient">Elige tu Vía de Compromiso</h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Diferentes tipos de proyectos requieren diferentes enfoques. Selecciona la vía que mejor coincida con tus necesidades y cronograma.
+                </p>
+            </header>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
     <section class="py-20 px-6">
         <div class="max-w-7xl mx-auto">
             <div class="text-center mb-16">
@@ -152,9 +173,9 @@
                 </div>
             </div>
         </div>
-    </section>
+    </article>
 
-    <!-- Main Contact Form Section -->
+    <!-- Sección principal del formulario -->
     <section class="py-20 px-6 bg-surface/30">
         <div class="max-w-4xl mx-auto">
             <div class="text-center mb-12">
@@ -347,7 +368,7 @@
         </div>
     </section>
 
-    <!-- Quick Consultation Booking -->
+    <!-- Sección de reserva de consulta -->
     <section class="py-20 px-6">
         <div class="max-w-4xl mx-auto">
             <div class="card text-center">
@@ -415,7 +436,7 @@
         </div>
     </section>
 
-    <!-- Contact Information -->
+    <!-- Sección de información de contacto -->
     <section class="py-20 px-6 bg-surface/30">
         <div class="max-w-7xl mx-auto">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -549,7 +570,8 @@
         </div>
     </section>
 
-    <!-- FAQ Section -->
+    <!-- Artículo: Preguntas Frecuentes -->
+    <article class="py-20 px-6">
     <section class="py-20 px-6">
         <div class="max-w-4xl mx-auto">
             <div class="text-center mb-16">
@@ -626,12 +648,9 @@
                 </div>
             </div>
         </div>
-    </section>
-
-
-            </div>
         </div>
     </section>
+    </article>
 
     <!-- Emergency Contact for Existing Clients -->
     <section class="py-12 px-6 bg-error/10 border-t border-error/20">
@@ -714,8 +733,9 @@
             </div>
         </div>
     </footer>
+</main>
 
-    <script>
+<script>
         // Mobile menu toggle
         const mobileMenuBtn = document.getElementById('mobile-menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
