@@ -8,10 +8,9 @@
     <link rel="stylesheet" href="../css/main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fneonportf9496back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.8"></script>
 </head>
 <body class="bg-background text-text-primary overflow-x-hidden">
-    <!-- Floating Navigation (Desktop) -->
+    <!-- Navegación -->
     <nav id="floating-nav" class="hidden md:flex fixed top-6 left-1/2 transform -translate-x-1/2 z-50 bg-surface/80 backdrop-blur-lg border border-border rounded-2xl px-8 py-4 transition-all duration-300 ease-out">
         <div class="flex items-center justify-between w-full space-x-8">
             <a href="landing.html"><img src="../resources/FullColor_logo_horiz.png" alt="rxpana logo" class="h-12"></a>
@@ -47,12 +46,17 @@
         </div>
     </div>
 
-    <!-- Hero Section -->
-    <section class="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
-        <!-- Animated Background Particles -->
-        <div id="particles-container" class="absolute inset-0 z-0">
-            <div class="particle absolute w-2 h-2 bg-secondary rounded-full opacity-60 animate-pulse" style="top: 20%; left: 10%; animation-delay: 0s;"></div>
-            <div class="particle absolute w-1 h-1 bg-accent rounded-full opacity-40 animate-pulse" style="top: 30%; left: 80%; animation-delay: 1s;"></div>
+    <!-- Contenido principal -->
+    <main>
+        <!-- Sección Hero -->
+        <section class="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+            <!-- Animated Background Particles -->
+            <div id="particles-container" class="absolute inset-0 z-0">
+                <div class="particle absolute w-2 h-2 bg-secondary rounded-full opacity-60 animate-pulse" style="top: 20%; left: 10%; animation-delay: 0s;"></div>
+                <div class="particle absolute w-1 h-1 bg-accent rounded-full opacity-40 animate-pulse" style="top: 30%; left: 80%; animation-delay: 1s;"></div>
+                <div class="particle absolute w-3 h-3 bg-secondary rounded-full opacity-30 animate-pulse" style="top: 60%; left: 15%; animation-delay: 2s;"></div>
+                <div class="particle absolute w-1 h-1 bg-accent rounded-full opacity-50 animate-pulse" style="top: 80%; left: 70%; animation-delay: 0.5s;"></div>
+                <div class="particle absolute w-2 h-2 bg-secondary rounded-full opacity-40 animate-pulse" style="top: 40%; left: 90%; animation-delay: 1.5s;"></div>
             <div class="particle absolute w-3 h-3 bg-secondary rounded-full opacity-30 animate-pulse" style="top: 60%; left: 15%; animation-delay: 2s;"></div>
             <div class="particle absolute w-1 h-1 bg-accent rounded-full opacity-50 animate-pulse" style="top: 80%; left: 70%; animation-delay: 0.5s;"></div>
             <div class="particle absolute w-2 h-2 bg-secondary rounded-full opacity-40 animate-pulse" style="top: 40%; left: 90%; animation-delay: 1.5s;"></div>
@@ -65,96 +69,28 @@
         </div>
 
         <div class="relative z-10 text-center px-6 max-w-6xl mx-auto">
+
+            <!-- Current Availability Status -->
+            <div class="inline-flex items-center bg-surface/50 border border-success rounded-full px-6 py-3 mb-8 animate-slide-up" style="animation-delay: 0.3s;">
+                <div class="w-3 h-3 bg-success rounded-full mr-3 animate-pulse"></div>
+                <span class="text-success font-medium">Actualmente Disponible - Próxima Disponibilidad: Diciembre 2025</span>
+            </div>
+
             <h1 class="text-5xl md:text-7xl font-bold mb-6 text-gradient animate-fade-in">
                 Creemos algo<br />extraordinario
             </h1>
             <p class="text-xl md:text-2xl text-text-secondary mb-8 max-w-3xl mx-auto animate-slide-up">
                 Múltiples vías de compromiso diseñadas para coincidir con las necesidades de tu proyecto y estilo de colaboración. Desde consultas rápidas hasta transformaciones digitales integrales.
             </p>
+        </div>
+    </section>
+            </header>
             
-            <!-- Current Availability Status -->
-            <div class="inline-flex items-center bg-surface/50 border border-success rounded-full px-6 py-3 mb-8 animate-slide-up" style="animation-delay: 0.3s;">
-                <div class="w-3 h-3 bg-success rounded-full mr-3 animate-pulse"></div>
-                <span class="text-success font-medium">Actualmente Disponible - Próxima Disponibilidad: Diciembre 2025</span>
             </div>
         </div>
-    </section>
+    </article>
 
-    <!-- Engagement Pathways Section -->
-    <section class="py-20 px-6">
-        <div class="max-w-7xl mx-auto">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl md:text-5xl font-bold mb-6 text-gradient">Elige tu Vía de Compromiso</h2>
-                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
-                    Diferentes tipos de proyectos requieren diferentes enfoques. Selecciona la vía que mejor coincida con tus necesidades y cronograma.
-                </p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-                <!-- Project Inquiry Path -->
-                <div class="card group cursor-pointer hover-lift" id="project-inquiry-card">
-                    <div class="w-16 h-16 mx-auto mb-6 bg-gradient-to-r from-secondary to-accent rounded-2xl flex items-center justify-center neon-glow-orange group-hover:neon-glow-violet transition-all duration-300">
-                        <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
-                        </svg>
-                    </div>
-                    <h3 class="text-2xl font-semibold mb-4 text-center group-hover:text-secondary transition-colors duration-300">Consulta de Proyecto Completo</h3>
-                    <p class="text-text-secondary mb-6 text-center">Planificación integral de proyecto con requisitos detallados, cronograma y discusión de presupuesto.</p>
-                    <ul class="text-sm text-text-secondary space-y-2 mb-6">
-                        <li>• Recopilación detallada de brief del proyecto</li>
-                        <li>• Discusión de rango de presupuesto</li>
-                        <li>• Planificación de cronograma</li>
-                        <li>• Capacidad de compartir activos</li>
-                    </ul>
-                    <div class="text-center">
-                        <span class="text-accent font-medium">Mejor para: Nuevos sitios web, rediseños importantes</span>
-                    </div>
-                </div>
-
-                <!-- Quick Consultation Path -->
-                <div class="card group cursor-pointer hover-lift" id="consultation-card">
-                    <div class="w-16 h-16 mx-auto mb-6 bg-gradient-to-r from-accent to-secondary rounded-2xl flex items-center justify-center neon-glow-violet group-hover:neon-glow-orange transition-all duration-300">
-                        <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
-                        </svg>
-                    </div>
-                    <h3 class="text-2xl font-semibold mb-4 text-center group-hover:text-secondary transition-colors duration-300">Consulta Rápida</h3>
-                    <p class="text-text-secondary mb-6 text-center">Llamada de estrategia de 30 minutos para discutir tu visión y explorar posibilidades.</p>
-                    <ul class="text-sm text-text-secondary space-y-2 mb-6">
-                        <li>• Reserva de calendario en tiempo real</li>
-                        <li>• Discusión de estrategia</li>
-                        <li>• Revisión de viabilidad técnica</li>
-                        <li>• Planificación de próximos pasos</li>
-                    </ul>
-                    <div class="text-center">
-                        <span class="text-accent font-medium">Mejor para: Exploración inicial, preguntas rápidas</span>
-                    </div>
-                </div>
-
-                <!-- Collaboration Path -->
-                <div class="card group cursor-pointer hover-lift" id="collaboration-card">
-                    <div class="w-16 h-16 mx-auto mb-6 bg-gradient-to-r from-secondary to-accent rounded-2xl flex items-center justify-center neon-glow-orange group-hover:neon-glow-violet transition-all duration-300">
-                        <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
-                        </svg>
-                    </div>
-                    <h3 class="text-2xl font-semibold mb-4 text-center group-hover:text-secondary transition-colors duration-300">Asociación y Colaboración</h3>
-                    <p class="text-text-secondary mb-6 text-center">Asociaciones continuas, colaboración con agencias u oportunidades de intercambio de conocimientos.</p>
-                    <ul class="text-sm text-text-secondary space-y-2 mb-6">
-                        <li>• Asociaciones con agencias</li>
-                        <li>• Trabajo de retención continuo</li>
-                        <li>• Intercambio de conocimientos</li>
-                        <li>• Oportunidades de charlas</li>
-                    </ul>
-                    <div class="text-center">
-                        <span class="text-accent font-medium">Mejor para: Agencias, asociaciones a largo plazo</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Main Contact Form Section -->
+    <!-- Sección principal del formulario -->
     <section class="py-20 px-6 bg-surface/30">
         <div class="max-w-4xl mx-auto">
             <div class="text-center mb-12">
@@ -347,7 +283,7 @@
         </div>
     </section>
 
-    <!-- Quick Consultation Booking -->
+    <!-- Sección de reserva de consulta -->
     <section class="py-20 px-6">
         <div class="max-w-4xl mx-auto">
             <div class="card text-center">
@@ -383,25 +319,25 @@
                                     <svg class="w-5 h-5 text-secondary mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                                         <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
                                     </svg>
-                                    Your project vision and goals
+                                    Visión y objetivos de tu proyecto
                                 </li>
                                 <li class="flex items-start">
                                     <svg class="w-5 h-5 text-secondary mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                                         <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
                                     </svg>
-                                    Technical feasibility assessment
+                                    Evaluación de viabilidad técnica
                                 </li>
                                 <li class="flex items-start">
                                     <svg class="w-5 h-5 text-secondary mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                                         <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
                                     </svg>
-                                    Timeline and budget overview
+                                    Cronograma y estimación de presupuesto
                                 </li>
                                 <li class="flex items-start">
                                     <svg class="w-5 h-5 text-secondary mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                                         <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
                                     </svg>
-                                    Next steps and recommendations
+                                    Próximos pasos y recomendaciones
                                 </li>
                             </ul>
                         </div>
@@ -415,7 +351,7 @@
         </div>
     </section>
 
-    <!-- Contact Information -->
+    <!-- Sección de información de contacto -->
     <section class="py-20 px-6 bg-surface/30">
         <div class="max-w-7xl mx-auto">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -549,7 +485,8 @@
         </div>
     </section>
 
-    <!-- FAQ Section -->
+    <!-- Artículo: Preguntas Frecuentes -->
+    <article class="py-20 px-6">
     <section class="py-20 px-6">
         <div class="max-w-4xl mx-auto">
             <div class="text-center mb-16">
@@ -626,12 +563,9 @@
                 </div>
             </div>
         </div>
-    </section>
-
-
-            </div>
         </div>
     </section>
+    </article>
 
     <!-- Emergency Contact for Existing Clients -->
     <section class="py-12 px-6 bg-error/10 border-t border-error/20">
@@ -714,8 +648,9 @@
             </div>
         </div>
     </footer>
+</main>
 
-    <script>
+<script>
         // Mobile menu toggle
         const mobileMenuBtn = document.getElementById('mobile-menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
@@ -936,6 +871,5 @@
             document.body.classList.add('loaded');
         });
     </script>
-<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
 </body>
 </html>

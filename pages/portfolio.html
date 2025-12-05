@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="../css/main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fneonportf9496back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.8"></script>
 </head>
 <body class="bg-background text-text-primary overflow-x-hidden">
     <!-- Floating Navigation (Desktop) -->
@@ -63,6 +62,7 @@
             <div class="absolute top-1/4 left-1/4 w-32 h-32 border border-secondary/20 rounded-lg rotate-45 animate-spin" style="animation-duration: 20s;"></div>
             <div class="absolute bottom-1/4 right-1/4 w-24 h-24 border border-accent/20 rounded-full animate-pulse"></div>
         </div>
+        
 
         <div class="relative z-10 text-center px-6 max-w-6xl mx-auto">
             <h1 class="text-5xl md:text-7xl font-bold mb-6 text-gradient animate-fade-in">
@@ -86,7 +86,7 @@
     <div id="tech-stack-sidebar" class="fixed right-6 top-1/2 transform -translate-y-1/2 z-40 hidden lg:block">
         <div class="bg-surface/80 backdrop-blur-lg border border-border rounded-2xl p-4 space-y-4">
             <div class="text-center mb-4">
-                <h3 class="text-sm font-semibold text-text-secondary">Tech Stack</h3>
+                <h3 class="text-sm font-semibold text-text-secondary">Social</h3>
             </div>
             <div class="space-y-3">
                 <div class="tech-icon group cursor-pointer" data-tech="React">
@@ -145,32 +145,33 @@
             <!-- Projects Grid -->
             <div id="projects-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Project 1 - 3D E-commerce Platform -->
-                <div class="project-card group cursor-pointer hover-lift" data-category="ecommerce 3d-experiences" data-project="ecommerce-3d">
+                <div id="roofing-project" class="project-card group cursor-pointer hover-lift" data-category="ecommerce 3d-experiences" data-project="ecommerce-3d">
                     <div class="card relative overflow-hidden">
                         <div class="project-thumbnail relative overflow-hidden rounded-lg mb-6 h-48">
-                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2426&auto=format&fit=crop" alt="3D E-commerce Platform with Interactive Product Visualization" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                            <img src="../resources/website-roofing.webp" alt="3D E-commerce Platform with Interactive Product Visualization" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
                             <div class="absolute inset-0 bg-gradient-to-t from-secondary/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                             <div class="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                 <div class="bg-surface/80 backdrop-blur-sm rounded-lg px-3 py-1">
-                                    <span class="text-xs text-secondary font-semibold">3D Interactive</span>
+                                <!-- Badget dela card--><span class="text-xs text-secondary font-semibold">Website</span>
                                 </div>
                             </div>
                         </div>
                         <div class="project-info">
-                            <h3 class="text-xl font-semibold mb-3 group-hover:text-secondary transition-colors duration-300">Plataforma E-Commerce 3D</h3>
-                            <p class="text-text-secondary mb-4 text-sm">Visualización interactiva de productos con renderizado WebGL, personalización en tiempo real y experiencias de compra inmersivas.</p>
+                            <h3 class="text-xl font-semibold mb-3 group-hover:text-secondary transition-colors duration-300">JC&C Roofing Co.</h3>
+                            <p class="text-text-secondary mb-4 text-sm">Rediseño completo del sitio con enfoque en rendimiento, experiencia de usuario y optimización SEO, integrando una estructura moderna, dinámica y adaptable a distintos dispositivos.</p>
                             <div class="flex items-center justify-between mb-4">
                                 <div class="flex space-x-2">
-                                    <span class="tech-tag">Three.js</span>
-                                    <span class="tech-tag">React</span>
-                                    <span class="tech-tag">WebGL</span>
+                                    <span class="tech-tag">Wordpress</span>
+                                    <span class="tech-tag">JavaScript</span>
+                                    <span class="tech-tag">Rocket.net</span>
+                                    <!-- <span class="tech-tag">WebGL</span> -->
                                 </div>
-                                <div class="performance-metric">
-                                    <span class="text-success text-sm font-semibold">+340% Engagement</span>
-                                </div>
+                                <!-- <div class="performance-metric">
+                                    <span class="text-success text-sm font-semibold">+210% Engagement</span>
+                                </div> -->
                             </div>
                             <div class="flex items-center justify-between">
-                                <span class="text-sm text-accent">E-commerce • Experiencia 3D</span>
+                                <div class="skill-tags-container" data-skills="Sitio Web • SEO"></div>
                                 <svg class="w-5 h-5 text-secondary opacity-0 group-hover:opacity-100 transition-opacity duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
                                 </svg>
@@ -180,32 +181,31 @@
                 </div>
 
                 <!-- Project 2 - Brand Website -->
-                <div class="project-card group cursor-pointer hover-lift" data-category="brand-websites" data-project="brand-immersive">
+                <div id="savvy-project" class="project-card group cursor-pointer hover-lift" data-category="brand-websites" data-project="brand-immersive">
                     <div class="card relative overflow-hidden">
                         <div class="project-thumbnail relative overflow-hidden rounded-lg mb-6 h-48">
-                            <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Immersive Brand Experience Website" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                            <img src="../resources/savvy_project.webp" alt="Immersive Brand Experience Website" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
                             <div class="absolute inset-0 bg-gradient-to-t from-accent/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                             <div class="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                 <div class="bg-surface/80 backdrop-blur-sm rounded-lg px-3 py-1">
-                                    <span class="text-xs text-accent font-semibold">Award Winner</span>
+                                    <span class="text-xs text-accent font-semibold">Website</span>
                                 </div>
                             </div>
                         </div>
                         <div class="project-info">
-                            <h3 class="text-xl font-semibold mb-3 group-hover:text-secondary transition-colors duration-300">Experiencia de Marca Inmersiva</h3>
-                            <p class="text-text-secondary mb-4 text-sm">Experiencia digital galardonada con sistemas de partículas, narrativas interactivas y posicionamiento premium de marca.</p>
+                            <h3 class="text-xl font-semibold mb-3 group-hover:text-secondary transition-colors duration-300">Savvy Post Marketing</h3>
+                            <p class="text-text-secondary mb-4 text-sm">Administración y desarrollo de sitios personalizados y configuración de hosting para garantizar rendimiento, seguridad, compatibilidad, escalabilidad y funcionamiento estable continuo.</p>
                             <div class="flex items-center justify-between mb-4">
                                 <div class="flex space-x-2">
-                                    <span class="tech-tag">GSAP</span>
-                                    <span class="tech-tag">Canvas</span>
-                                    <span class="tech-tag">CSS3</span>
+                                    <span class="tech-tag">JavaScript</span>
+                                    <span class="tech-tag">Tailwind</span>
                                 </div>
-                                <div class="performance-metric">
+                                <!-- <div class="performance-metric">
                                     <span class="text-success text-sm font-semibold">2.3s Load Time</span>
-                                </div>
+                                </div> -->  
                             </div>
                             <div class="flex items-center justify-between">
-                                <span class="text-sm text-accent">Sitio de marca</span>
+                                <div class="skill-tags-container" data-skills="Web • Marketing"></div>
                                 <svg class="w-5 h-5 text-secondary opacity-0 group-hover:opacity-100 transition-opacity duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
                                 </svg>
@@ -215,32 +215,101 @@
                 </div>
 
                 <!-- Project 3 - Web Application -->
-                <div class="project-card group cursor-pointer hover-lift" data-category="web-apps" data-project="analytics-dashboard">
+                <div id="website-photos" class="project-card group cursor-pointer hover-lift" data-category="web-apps" data-project="analytics-dashboard">
                     <div class="card relative overflow-hidden">
                         <div class="project-thumbnail relative overflow-hidden rounded-lg mb-6 h-48">
-                            <img src="https://images.pixabay.com/photo/2016/11/30/20/58/programming-1873854_1280.png" alt="AI-Powered Analytics Dashboard" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                            <img src="../resources/website-photos.webp" alt="AI-Powered Analytics Dashboard" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
                             <div class="absolute inset-0 bg-gradient-to-t from-secondary/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                             <div class="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                 <div class="bg-surface/80 backdrop-blur-sm rounded-lg px-3 py-1">
-                                    <span class="text-xs text-secondary font-semibold">AI Powered</span>
+                                    <span class="text-xs text-secondary font-semibold">Website</span>
                                 </div>
                             </div>
                         </div>
                         <div class="project-info">
-                            <h3 class="text-xl font-semibold mb-3 group-hover:text-secondary transition-colors duration-300">Panel de Analítica IA</h3>
-                            <p class="text-text-secondary mb-4 text-sm">Visualización de datos en tiempo real con inteligencia artificial, analítica predictiva e informes interactivos.</p>
+                            <h3 class="text-xl font-semibold mb-3 group-hover:text-secondary transition-colors duration-300">Website Fotografía</h3>
+                            <p class="text-text-secondary mb-4 text-sm">Portafolio profesional de fotografía freelance, creado para ofrecer sesiones personalizadas, con estilo único y enfoque creativo, permitiendo a cada cliente obtener recuerdos auténticos...</p>
+                            <div class="flex items-center justify-between mb-4">
+                                <div class="flex space-x-2">
+                                    <span class="tech-tag">Framer</span>
+                                    <span class="tech-tag">Tailwind</span>
+                                    
+                                </div>
+                                <div class="performance-metric">
+                                    <span class="text-success text-sm font-semibold">recien agregado</span>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div class="skill-tags-container" data-skills="Aplicación web"></div>
+                                <svg class="w-5 h-5 text-secondary opacity-0 group-hover:opacity-100 transition-opacity duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div id="elchory-project" class="project-card group cursor-pointer hover-lift" data-category="ecommerce" data-project="el-chory">
+                    <div class="card relative overflow-hidden">
+                        <div class="project-thumbnail relative overflow-hidden rounded-lg mb-6 h-48">
+                            <img src="../resources/elchory_project.webp" alt="El Chory E-commerce" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                            <div class="absolute inset-0 bg-gradient-to-t from-secondary/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <div class="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <div class="bg-surface/80 backdrop-blur-sm rounded-lg px-3 py-1">
+                                    <span class="text-xs text-secondary font-semibold">E-commerce</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="text-xl font-semibold mb-3 group-hover:text-secondary transition-colors duration-300">El Chory</h3>
+                            <p class="text-text-secondary mb-4 text-sm">Plataforma de comercio electrónico para la marca "El Chory Hot Dogs", ofreciendo una experiencia de compra fluida con catálogo de productos, carrito de compras y pasarela de pago segura.</p>
+                            <div class="flex items-center justify-between mb-4">
+                                <div class="flex space-x-2">
+                                    <span class="tech-tag">WordPress</span>
+                                    <span class="tech-tag">Framer Motion</span>
+                                    <span class="tech-tag">Elementor</span>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div class="skill-tags-container" data-skills="E-commerce • UI/UX Design"></div>
+                                <svg class="w-5 h-5 text-secondary opacity-0 group-hover:opacity-100 transition-opacity duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="project-card group cursor-pointer hover-lift" data-category="website" data-project="portal-corporativo">
+                    <div class="card relative overflow-hidden">
+                        <div class="project-thumbnail relative overflow-hidden rounded-lg mb-6 h-48">
+                            <img src="../resources/corpo-web.png" alt="Portal Web Corporativo" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                            <div class="absolute inset-0 bg-gradient-to-t from-secondary/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <div class="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <div class="bg-surface/80 backdrop-blur-sm rounded-lg px-3 py-1">
+                                    <span class="text-xs text-secondary font-semibold">Website</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="text-xl font-semibold mb-3 group-hover:text-secondary transition-colors duration-300">Portal Web Corporativo</h3>
+                            <p class="text-text-secondary mb-4 text-sm">Portal web corporativo moderno y profesional, diseñado para mostrar la identidad de la marca y ofrecer una experiencia de usuario excepcional en todos los dispositivos.</p>
                             <div class="flex items-center justify-between mb-4">
                                 <div class="flex space-x-2">
                                     <span class="tech-tag">React</span>
-                                    <span class="tech-tag">D3.js</span>
-                                    <span class="tech-tag">Python</span>
+                                    <span class="tech-tag">Next.js</span>
+                                    <span class="tech-tag">Tailwind</span>
                                 </div>
                                 <div class="performance-metric">
-                                    <span class="text-success text-sm font-semibold">99.9% Uptime</span>
+                                    <span class="text-success text-sm font-semibold">recien agregado</span>
                                 </div>
                             </div>
                             <div class="flex items-center justify-between">
-                                <span class="text-sm text-accent">Aplicación web</span>
+                                <div class="skill-tags-container" data-skills="Diseño Web • Desarrollo Frontend"></div>
                                 <svg class="w-5 h-5 text-secondary opacity-0 group-hover:opacity-100 transition-opacity duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
                                 </svg>
@@ -249,68 +318,31 @@
                     </div>
                 </div>
 
-                <!-- Project 4 - 3D Experience -->
-                <div class="project-card group cursor-pointer hover-lift" data-category="3d-experiences" data-project="virtual-showroom">
-                    <div class="card relative overflow-hidden">
-                        <div class="project-thumbnail relative overflow-hidden rounded-lg mb-6 h-48">
-                            <img src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?q=80&w=2425&auto=format&fit=crop" alt="Virtual 3D Showroom Experience" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
-                            <div class="absolute inset-0 bg-gradient-to-t from-accent/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                            <div class="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                                <div class="bg-surface/80 backdrop-blur-sm rounded-lg px-3 py-1">
-                                    <span class="text-xs text-accent font-semibold">VR Ready</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-info">
-                            <h3 class="text-xl font-semibold mb-3 group-hover:text-secondary transition-colors duration-300">Showroom Virtual 3D</h3>
-                            <p class="text-text-secondary mb-4 text-sm">Showroom virtual inmersivo con iluminación realista, simulación física y compatibilidad VR para exploración de productos.</p>
-                            <div class="flex items-center justify-between mb-4">
-                                <div class="flex space-x-2">
-                                    <span class="tech-tag">Three.js</span>
-                                    <span class="tech-tag">WebXR</span>
-                                    <span class="tech-tag">Blender</span>
-                                </div>
-                                <div class="performance-metric">
-                                    <span class="text-success text-sm font-semibold">60 FPS</span>
-                                </div>
-                            </div>
-                            <div class="flex items-center justify-between">
-                                <span class="text-sm text-accent">Experiencia 3D</span>
-                                <svg class="w-5 h-5 text-secondary opacity-0 group-hover:opacity-100 transition-opacity duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
-                <!-- Project 5 - E-commerce -->
-                <div class="project-card group cursor-pointer hover-lift" data-category="ecommerce" data-project="fashion-store">
+
+                <div class="project-card group cursor-pointer hover-lift" data-category="ecommerce" data-project="luholife">
                     <div class="card relative overflow-hidden">
                         <div class="project-thumbnail relative overflow-hidden rounded-lg mb-6 h-48">
-                            <img src="https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Premium Fashion E-commerce Store" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                            <img src="../resources/luholife_e-commerce.webp" alt="LuhoLife El Salvador E-commerce" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
                             <div class="absolute inset-0 bg-gradient-to-t from-secondary/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                             <div class="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                 <div class="bg-surface/80 backdrop-blur-sm rounded-lg px-3 py-1">
-                                    <span class="text-xs text-secondary font-semibold">Premium</span>
+                                    <span class="text-xs text-secondary font-semibold">E-commerce</span>
                                 </div>
                             </div>
                         </div>
                         <div class="project-info">
-                            <h3 class="text-xl font-semibold mb-3 group-hover:text-secondary transition-colors duration-300">Tienda de Moda Premium</h3>
-                            <p class="text-text-secondary mb-4 text-sm">Plataforma e-commerce de lujo con filtros avanzados, prueba virtual con AR y experiencia de compra fluida.</p>
+                            <h3 class="text-xl font-semibold mb-3 group-hover:text-secondary transition-colors duration-300">LuhoLife El Salvador</h3>
+                            <p class="text-text-secondary mb-4 text-sm">Plataforma de comercio electrónico premium con integración de métodos de pago locales y envíos a todo el país, ofreciendo una experiencia de compra excepcional.</p>
                             <div class="flex items-center justify-between mb-4">
                                 <div class="flex space-x-2">
-                                    <span class="tech-tag">Next.js</span>
-                                    <span class="tech-tag">Stripe</span>
-                                    <span class="tech-tag">AR.js</span>
-                                </div>
-                                <div class="performance-metric">
-                                    <span class="text-success text-sm font-semibold">+180% Sales</span>
+                                    <span class="tech-tag">WooCommerce</span>
+                                    <span class="tech-tag">WordPress</span>
+                                    <span class="tech-tag">PHP</span>
                                 </div>
                             </div>
                             <div class="flex items-center justify-between">
-                                <span class="text-sm text-accent">E-commerce</span>
+                                <div class="skill-tags-container" data-skills="E-commerce • SEO • UX/UI"></div>
                                 <svg class="w-5 h-5 text-secondary opacity-0 group-hover:opacity-100 transition-opacity duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
                                 </svg>
@@ -319,40 +351,7 @@
                     </div>
                 </div>
 
-                <!-- Project 6 - Web Application -->
-                <div class="project-card group cursor-pointer hover-lift" data-category="web-apps" data-project="collaboration-platform">
-                    <div class="card relative overflow-hidden">
-                        <div class="project-thumbnail relative overflow-hidden rounded-lg mb-6 h-48">
-                            <img src="https://images.pixabay.com/photo/2015/05/31/10/55/man-791049_1280.jpg" alt="Real-time Collaboration Platform" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
-                            <div class="absolute inset-0 bg-gradient-to-t from-accent/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                            <div class="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                                <div class="bg-surface/80 backdrop-blur-sm rounded-lg px-3 py-1">
-                                    <span class="text-xs text-accent font-semibold">Real-time</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-info">
-                            <h3 class="text-xl font-semibold mb-3 group-hover:text-secondary transition-colors duration-300">Plataforma de Colaboración</h3>
-                            <p class="text-text-secondary mb-4 text-sm">Espacio de colaboración en tiempo real con videoconferencias, intercambio de documentos y herramientas de gestión de proyectos.</p>
-                            <div class="flex items-center justify-between mb-4">
-                                <div class="flex space-x-2">
-                                    <span class="tech-tag">Socket.io</span>
-                                    <span class="tech-tag">WebRTC</span>
-                                    <span class="tech-tag">MongoDB</span>
-                                </div>
-                                <div class="performance-metric">
-                                    <span class="text-success text-sm font-semibold">10K+ Users</span>
-                                </div>
-                            </div>
-                            <div class="flex items-center justify-between">
-                                <span class="text-sm text-accent">Aplicación web</span>
-                                <svg class="w-5 h-5 text-secondary opacity-0 group-hover:opacity-100 transition-opacity duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                
             </div>
         </div>
     </section>
@@ -367,7 +366,8 @@
                     <div class="flex items-center justify-between mb-8">
                         <div>
                             <h2 id="modal-title" class="text-3xl font-bold text-gradient mb-2">Project Title</h2>
-                            <p id="modal-category" class="text-text-secondary">Category</p>
+                            <div id="modal-header-skills" class="mb-2"></div>
+                            <div id="modal-category"></div>
                         </div>
                         <button id="close-modal" class="text-text-secondary hover:text-secondary transition-colors duration-300">
                             <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -379,16 +379,20 @@
                     <!-- Modal Content -->
                     <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
                         <div>
-                            <img id="modal-image" src alt class="w-full h-64 object-cover rounded-lg mb-6" />
+                            <video id="modal-video" class="w-full h-64 object-cover rounded-lg mb-6" autoplay loop muted playsinline onended="this.play()">
+                                <source src="" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
                             <div class="space-y-4">
                                 <div>
                                     <h3 class="text-xl font-semibold mb-2">Resumen del Proyecto</h3>
                                     <p id="modal-description" class="text-text-secondary"></p>
                                 </div>
                                 <div>
-                                    <h3 class="text-xl font-semibold mb-2">Tecnologías Utilizadas</h3>
-                                    <div id="modal-tech-stack" class="flex flex-wrap gap-2"></div>
+                                    <h3 class="text-xl font-semibold text-secondary transition-colors duration-300 mb-2">Tecnologías Utilizadas</h3>
+                                    <div id="modal-tech-stack" class="text-text-secondary flex flex-wrap gap-2"></div>
                                 </div>
+                            
                             </div>
                         </div>
                         <div>
@@ -467,10 +471,7 @@
                     <!-- Action Buttons -->
                     <div class="flex flex-col sm:flex-row gap-4 justify-center">
                         <a href="javascript:void(0)" class="btn-primary text-center">
-                            Ver Demo en Vivo
-                        </a>
-                        <a href="contact_multi_touch_engagement_hub.html" class="border border-secondary text-secondary hover:bg-secondary hover:text-primary px-8 py-3 rounded-lg transition-all duration-300 hover-lift neon-glow-orange text-center">
-                            Iniciar Proyecto Similar
+                            Ver Sitio Web
                         </a>
                     </div>
                 </div>
@@ -506,7 +507,7 @@
                     <h3 class="text-xl font-semibold mb-3 group-hover:text-secondary transition-colors duration-300">Arte de Shaders Interactivo</h3>
                     <p class="text-text-secondary mb-4 text-sm">Experimentos de shaders WebGL en tiempo real con sistemas de partículas y efectos de iluminación dinámica.</p>
                     <div class="flex items-center justify-between">
-                        <span class="text-sm text-accent">WebGL • GLSL</span>
+                        <div class="skill-tags-container" data-skills="WebGL • GLSL"></div>
                         <svg class="w-5 h-5 text-secondary opacity-0 group-hover:opacity-100 transition-opacity duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
                         </svg>
@@ -530,7 +531,7 @@
                     <h3 class="text-xl font-semibold mb-3 group-hover:text-secondary transition-colors duration-300">Animaciones CSS Puras</h3>
                     <p class="text-text-secondary mb-4 text-sm">Animaciones complejas y efectos visuales creados completamente con CSS, sin necesidad de JavaScript.</p>
                     <div class="flex items-center justify-between">
-                        <span class="text-sm text-accent">CSS3 • Animations</span>
+                        <div class="skill-tags-container" data-skills="CSS3 • Animations"></div>
                         <svg class="w-5 h-5 text-secondary opacity-0 group-hover:opacity-100 transition-opacity duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
                         </svg>
@@ -554,7 +555,7 @@
                     <h3 class="text-xl font-semibold mb-3 group-hover:text-secondary transition-colors duration-300">Interfaces Potenciadas por IA</h3>
                     <p class="text-text-secondary mb-4 text-sm">Interfaces experimentales que se adaptan y aprenden del comportamiento del usuario usando aprendizaje automático.</p>
                     <div class="flex items-center justify-between">
-                        <span class="text-sm text-accent">AI • Machine Learning</span>
+                        <div class="skill-tags-container" data-skills="AI • Machine Learning"></div>
                         <svg class="w-5 h-5 text-secondary opacity-0 group-hover:opacity-100 transition-opacity duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
                         </svg>
@@ -680,6 +681,36 @@
     </style>
 
     <script>
+        // Reusable component for skill/category tags
+        function createSkillTags(skillsText, containerElement) {
+            if (!containerElement) return;
+            
+            // Clear existing content
+            containerElement.innerHTML = '';
+            
+            // Create span element with the skills text
+            const span = document.createElement('span');
+            span.className = 'text-sm text-accent';
+            span.textContent = skillsText;
+            
+            containerElement.appendChild(span);
+        }
+
+        // Reusable component for category display
+        function createCategoryTag(categoryText, containerElement) {
+            if (!containerElement) return;
+            
+            // Clear existing content
+            containerElement.innerHTML = '';
+            
+            // Create paragraph element with the category text
+            const p = document.createElement('p');
+            p.className = 'text-text-secondary';
+            p.textContent = categoryText;
+            
+            containerElement.appendChild(p);
+        }
+
         // Mobile menu toggle
         const mobileMenuBtn = document.getElementById('mobile-menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
@@ -750,11 +781,12 @@
         // Project data
         const projectData = {
             'ecommerce-3d': {
-                title: '3D E-Commerce Platform',
-                category: 'E-commerce • 3D Experience',
-                image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2426&auto=format&fit=crop',
-                description: 'Revolutionary e-commerce platform featuring interactive 3D product visualization, real-time customization, and immersive shopping experiences. Built with cutting-edge WebGL technology and optimized for performance across all devices.',
-                techStack: ['Three.js', 'React', 'WebGL', 'Node.js', 'MongoDB'],
+                title: 'JC&C Roofing Company',
+                category: 'Website',
+                video: '../resources/videos/Roofing-comp.mp4',
+                description: 'Optimización integral del sitio web con rediseño de páginas clave, aplicación de estrategias SEO y contenido potenciado con inteligencia artificial. Mejora del rendimiento del servidor y la velocidad de carga, posicionando a la empresa entre las tres principales de techado en Houston.',
+                techStack: ['Wordpress', '•', 'Object Cache Pro', '•', 'Rocket.net', '•', 'SemRush'],
+                skills: 'SEO • Performance',
                 metrics: {
                     metric1: '2.1s',
                     metric2: '96%',
@@ -762,18 +794,79 @@
                     metric4: '99.8%'
                 },
                 client: {
-                    name: 'Sarah Johnson',
-                    title: 'CEO, Fashion Forward',
+                    name: 'Christian Hernandez',
+                    title: 'Chief Excutive Officer',
                     avatar: 'https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
                     testimonial: 'The 3D visualization completely transformed our online shopping experience. Customer engagement increased by 340% and our conversion rate doubled.'
                 }
             },
+            'el-chory': {
+                title: 'El Chory',
+                category: 'Website',
+                video: '../resources/videos/chory-vid.mp4',
+                description: 'Desarrollo de tienda en línea para El Chory, ofreciendo una experiencia de compra fluida y atractiva. Implementación de catálogo de productos, carrito de compras y pasarela de pago segura.',
+                techStack: ['WordPress', 'Framer Motion', 'Elementor', 'CSS3'],
+                skills: 'E-commerce • UI/UX Design',
+                metrics: {
+                    metric1: '1.5s',
+                    metric2: '97%',
+                    metric3: '+250%',
+                    metric4: '99.7%'
+                },
+                client: {
+                    name: 'María González',
+                    title: 'Gerente de Ventas',
+                    avatar: 'https://images.pexels.com/photos/3763188/pexels-photo-3763188.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+                    testimonial: 'La nueva tienda en línea ha superado nuestras expectativas. Hemos incrementado nuestras ventas en un 250% y la experiencia de nuestros clientes ha mejorado significativamente.'
+                }
+            },
+            'portal-corporativo': {
+                title: 'Portal Web Corporativo',
+                category: 'Sistema Web',
+                video: '../resources/videos/directorio-vid.mp4',
+                description: 'Desarrollo de un portal web corporativo moderno y profesional, diseñado para mostrar la identidad de la marca y ofrecer una experiencia de usuario excepcional en todos los dispositivos.',
+                techStack: ['React', 'Next.js', 'Tailwind CSS', 'Framer Motion'],
+                skills: 'Desarrollo Frontend • APIREST • Web Services',
+                metrics: {
+                    metric1: '1.2s',
+                    metric2: '99%',
+                    metric3: '+180%',
+                    metric4: '99.9%'
+                },
+                client: {
+                    name: 'Carlos Mendoza',
+                    title: 'Director de Marketing',
+                    avatar: 'https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+                    testimonial: 'El nuevo portal corporativo ha transformado nuestra presencia en línea. Hemos recibido numerosos elogios por el diseño y la facilidad de navegación.'
+                }
+            },
+            'luholife': {
+                title: 'LuhoLife El Salvador',
+                category: 'E-commerce',
+                video: '../resources/videos/Roofing-comp.mp4',
+                description: 'Plataforma de comercio electrónico para LuhoLife El Salvador, ofreciendo una experiencia de compra premium con integración de métodos de pago locales y envíos a todo el país.',
+                techStack: ['WooCommerce', 'WordPress', 'PHP', 'JavaScript'],
+                skills: 'E-commerce • SEO • UX/UI',
+                metrics: {
+                    metric1: '1.7s',
+                    metric2: '95%',
+                    metric3: '+300%',
+                    metric4: '99.6%'
+                },
+                client: {
+                    name: 'Ana Rodríguez',
+                    title: 'Fundadora',
+                    avatar: 'https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+                    testimonial: 'El crecimiento que ha tenido nuestro negocio desde que lanzamos la tienda en línea ha sido increíble. Hemos triplicado nuestras ventas y expandido nuestro alcance a todo el país.'
+                }
+            },
             'brand-immersive': {
-                title: 'Immersive Brand Experience',
-                category: 'Brand Website',
-                image: 'https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-                description: 'Award-winning digital brand experience featuring particle systems, interactive storytelling elements, and premium positioning. Created to establish market leadership through innovative web design.',
-                techStack: ['GSAP', 'Canvas API', 'CSS3', 'JavaScript', 'Webpack'],
+                title: 'Savvy Post Marketing',
+                category: 'E-commerce',
+                video: '../resources/videos/Savvy PM-video.mp4',
+                description: 'Gestión y mantenimiento de sitio web enfocado en optimización SEO, velocidad y usabilidad. Actualización de contenido, configuración de hosting y mejora del rendimiento general para fortalecer la presencia digital de la agencia.',
+                techStack: ['GSAP', 'CSS3', 'JavaScript', 'Webpack'],
+                skills: 'Marketing • Animation',
                 metrics: {
                     metric1: '1.8s',
                     metric2: '98%',
@@ -782,17 +875,18 @@
                 },
                 client: {
                     name: 'Michael Chen',
-                    title: 'Creative Director, Pixel Studios',
+                    title: 'CEO, SPM',
                     avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1974&auto=format&fit=crop',
                     testimonial: 'The creative vision and technical execution set a new standard for our industry. This project won three design awards and significantly elevated our brand presence.'
                 }
             },
             'analytics-dashboard': {
-                title: 'AI Analytics Dashboard',
-                category: 'Web Application',
-                image: 'https://images.pixabay.com/photo/2016/11/30/20/58/programming-1873854_1280.png',
+                title: 'Website Fotografía',
+                category: 'Website',
+                video: '../resources/videos/Fotografo-web-vid.mp4',
                 description: 'Sophisticated analytics platform with real-time data visualization, machine learning insights, and predictive analytics. Designed for enterprise-level data processing and decision making.',
                 techStack: ['React', 'D3.js', 'Python', 'TensorFlow', 'PostgreSQL'],
+                skills: 'Aplicación web',
                 metrics: {
                     metric1: '3.2s',
                     metric2: '94%',
@@ -808,6 +902,14 @@
             }
         };
 
+        // Initialize skill tags in project cards
+        document.querySelectorAll('.skill-tags-container').forEach(container => {
+            const skills = container.getAttribute('data-skills');
+            if (skills) {
+                createSkillTags(skills, container);
+            }
+        });
+
         // Open project modal
         projectCards.forEach(card => {
             card.addEventListener('click', () => {
@@ -817,8 +919,19 @@
                 if (project) {
                     // Update modal content
                     document.getElementById('modal-title').textContent = project.title;
-                    document.getElementById('modal-category').textContent = project.category;
-                    document.getElementById('modal-image').src = project.image;
+                    
+                    // Update skills in header using reusable component
+                    const modalHeaderSkillsContainer = document.getElementById('modal-header-skills');
+                    createSkillTags(project.skills, modalHeaderSkillsContainer);
+                    
+                    // Update category using reusable component
+                    const modalCategoryContainer = document.getElementById('modal-category');
+                    createCategoryTag(project.category, modalCategoryContainer);
+                    
+                    const videoElement = document.getElementById('modal-video');
+                    const sourceElement = videoElement.querySelector('source');
+                    sourceElement.src = project.video;
+                    videoElement.load();
                     document.getElementById('modal-description').textContent = project.description;
                     
                     // Update tech stack
@@ -830,6 +943,10 @@
                         span.textContent = tech;
                         techStackContainer.appendChild(span);
                     });
+                    
+                    // Update skills using reusable component
+                    const modalSkillsContainer = document.getElementById('modal-skills');
+                    createSkillTags(project.skills, modalSkillsContainer);
                     
                     // Update metrics
                     document.getElementById('metric-1').textContent = project.metrics.metric1;
@@ -910,6 +1027,5 @@
             document.body.classList.add('loaded');
         });
     </script>
-<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
 </body>
 </html>
