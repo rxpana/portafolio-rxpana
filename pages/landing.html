@@ -71,12 +71,13 @@
             <div class="h-24 mb-8 md:hidden"></div>
             <img src="../resources/photo_rxpana.png" alt="" class="mx-auto w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 rounded-full object-cover md:mt-0 mb-4 animate-pop">
             
-            <h1 class="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold mb-6 text-gradient animate-fade-in hero-text" data-cursor="wave">
-                <span id="typewriter"></span><span class="typewriter-cursor">|</span>
+            <h1 class="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold mb-6 text-gradient animate-fade-in hero-text" data-cursor="wave" style="font-family: 'Inter', sans-serif;">
+                <span id="typewriter"></span><span class="typecursor">|</span>
             </h1>
-            <p class="text-xl md:text-2xl text-text-secondary mb-8 max-w-3xl mx-auto animate-slide-up hero-text font-light leading-relaxed tracking-wide" data-cursor="wave" style="font-family: 'DM Sans', sans-serif;">
+            <p class="text-lg md:text-xl text-text-secondary mb-8 max-w-3xl mx-auto animate-slide-up hero-text font-light leading-relaxed tracking-wide" data-cursor="wave" style="font-family: 'Inter', sans-serif;">
                 ¡Hola! Soy Rodrigo, desarrollador web freelance. Ayudo a empresas locales e internacionales a transformar sus ideas en sitios web atractivos y funcionales. Échale un vistazo a mi trabajo y potencia tu negocio en la web.
             </p>
+            
             <div class="flex flex-col sm:flex-row gap-6 justify-center items-center animate-slide-up" style="animation-delay: 0.3s;">
                 <a href="portfolio.html" class="btn-primary text-lg px-8 py-4">
                     Ve mis trabajos
@@ -85,7 +86,32 @@
                     Inicia un proyecto
                 </a>
             </div>
-            
+
+            <!-- Redes Sociales HERO -->
+            <div class="flex justify-center gap-8 mt-8 animate-slide-up" style="animation-delay: 0.4s;">
+                <a href="https://linkedin.com/in/rxpana" target="_blank" class="group relative p-2 text-white hover:text-secondary transition-all duration-300" aria-label="LinkedIn">
+                    <div class="absolute inset-0 bg-white/10 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"></div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="relative z-10 group-hover:scale-110 transition-transform duration-300">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                        <rect x="2" y="9" width="4" height="12"></rect>
+                        <circle cx="4" cy="4" r="2"></circle>
+                    </svg>
+                </a>
+                <a href="https://instagram.com/rxpana" target="_blank" class="group relative p-2 text-white hover:text-pink-400 transition-all duration-300" aria-label="Instagram">
+                    <div class="absolute inset-0 bg-white/10 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"></div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="relative z-10 group-hover:scale-110 transition-transform duration-300">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                    </svg>
+                </a>
+                <a href="https://github.com/rxpana/" target="_blank" class="group relative p-2 text-white hover:text-gray-300 transition-all duration-300" aria-label="GitHub">
+                    <div class="absolute inset-0 bg-white/10 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"></div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="relative z-10 group-hover:scale-110 transition-transform duration-300">
+                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                    </svg>
+                </a>
+            </div>
         </div>
 
         <!-- Cursor animado -->
@@ -100,6 +126,8 @@
             </svg>
         </div>
     </section>
+
+    
 
     <br><br>
 <!-- Stack de Desarrollo -->
@@ -413,9 +441,10 @@
                 <!-- Project 1 - Left -->
                 <div class="flex items-center justify-between relative">
                     <div class="w-full md:w-5/12 md:text-right">
+                        <a href="portfolio.html#roofing-project">
                         <div class="card hover-lift p-8">
                             <div class="mb-6">
-                                <img src="../resources/Roofing_orange.webp" alt="myroofimprovement.com website" class="w-full h-64 object-cover rounded-lg" loading="lazy" />
+                                 <img src="../resources/website-roofing.webp" alt="myroofimprovement.com website" class="w-full h-auto object-cover rounded-lg" loading="lazy" />
                             </div>
                         
                             <div class="mb-4 md:text-right">
@@ -428,18 +457,19 @@
                             </div>
                             <h3 class="text-2xl font-bold mb-4 text-gradient">JC&C Roofing Company</h3>
                             <p class="text-text-secondary mb-6">
-                                Rediseño integral y construcción de sitio web con posicionamiento SEO avanzado, optimización de performance y caché, y generación inteligente de contenido asistido por IA.
+                                Rediseño integral y construcción de sitio web con posicionamiento SEO avanzado, optimización de performance y caché, generación inteligente de contenido asistido por IA.
                             </p>
                             <div class="flex flex-wrap gap-2 mb-4 md:justify-end">
                                 <span class="px-3 py-1 bg-secondary/20 text-secondary rounded-full text-sm">Wordpress</span>
                                 <span class="px-3 py-1 bg-secondary/20 text-secondary rounded-full text-sm">Elementor</span>
                                 <span class="px-3 py-1 bg-secondary/20 text-secondary rounded-full text-sm">Object caché Pro</span>
                                 <span class="px-3 py-1 bg-secondary/20 text-secondary rounded-full text-sm">Semrush</span>
+                            </div><br>
+                            <div class="text-sm text-text-secondary">
+                                <strong class="text-accent">Resultado:</strong> Posicionamiento en top 3 Roofing Companies en Houston
                             </div>
-                            <!-- <div class="text-sm text-text-secondary">
-                                <strong class="text-accent">Resultado:</strong> 85% de mejora en la eficiencia de visualización de datos
-                            </div> -->
                         </div>
+                        </a>
                     </div>
                     
                     <!-- Timeline Point -->
@@ -458,7 +488,7 @@
                     <div class="w-full md:w-5/12">
                         <div class="card hover-lift p-8">
                             <div class="mb-6">
-                                <img src="../resources/savvy_project.webp" alt="Savvy Post Marketing website" class="w-full h-64 object-cover rounded-lg" loading="lazy" />
+                                 <img src="../resources/savvy_project.webp" alt="myroofimprovement.com website" class="w-full h-auto object-cover rounded-lg" loading="lazy" />
                             </div>
                         
                             <div class="mb-4">
@@ -471,7 +501,7 @@
                             </div>
                             <h3 class="text-2xl font-bold mb-4 text-gradient">Savvy Post Marketing</h3>
                             <p class="text-text-secondary mb-6">
-                                Desarrollé sitios web funcionales para diversos sectores del mercado estadounidense, optimizando servidores y entornos web para garantizar seguridad, rendimiento y escalabilidad mediante tecnologías web y CMS empresariales.
+                                Desarrollo sitios web funcionales para diversos sectores del mercado estadounidense, optimizando servidores y entornos web para garantizar seguridad, rendimiento y escalabilidad mediante tecnologías web y CMS empresariales.
                             </p>
                             <div class="flex flex-wrap gap-2 mb-4">
                                 <span class="px-3 py-1 bg-accent/20 text-accent rounded-full text-sm">HTML</span>
@@ -491,26 +521,26 @@
                     <div class="w-full md:w-5/12 md:text-right">
                         <div class="card hover-lift p-8">
                             <div class="mb-6">
-                                <img src="../resources/elchory_project.webp" alt="Proyecto universitario de prototipo de website para la marca El Chory" class="w-full h-64 object-cover rounded-lg" loading="lazy" />
+                                 <img src="../resources/website-photos.webp" alt="myroofimprovement.com website" class="w-full h-auto object-cover rounded-lg" loading="lazy" />
                             </div>
                         
                             <div class="mb-4 md:text-right">
-                                <a href="https://webg51.sg-host.com/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-secondary hover:text-accent transition-colors duration-300">
+                                <a href="https://broader-point-606917.framer.app/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-secondary hover:text-accent transition-colors duration-300">
                                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
                                     </svg>
                                     <span class="text-sm font-medium">Ver sitio web</span>
                                 </a>
                             </div>
-                            <h3 class="text-2xl font-bold mb-4 text-gradient">El Chory prototipo de web</h3>
+                            <h3 class="text-2xl font-bold mb-4 text-gradient">Website Fotógrafo Freelance</h3>
                             <p class="text-text-secondary mb-6">
-                                Plataforma de comercio electrónico para la marca "El chory", desarrollada como proyecto universitario, con una tienda en línea integrada para la gestión de pedidos directos.
+                                Portafolio profesional de fotografía freelance, creado para ofrecer sesiones personalizadas, con estilo único y enfoque creativo, permitiendo a cada cliente obtener recuerdos auténticos y memorables.
                             </p>
                             <div class="flex flex-wrap gap-2 mb-4 md:justify-end">
-                                <span class="px-3 py-1 bg-secondary/20 text-secondary rounded-full text-sm">Wordpress</span>
-                                <span class="px-3 py-1 bg-secondary/20 text-secondary rounded-full text-sm">Elementor</span>
+                                <span class="px-3 py-1 bg-secondary/20 text-secondary rounded-full text-sm">Framer Motion</span>
                                 <span class="px-3 py-1 bg-secondary/20 text-secondary rounded-full text-sm">JavaScript</span>
-                                <span class="px-3 py-1 bg-secondary/20 text-secondary rounded-full text-sm">SiteGround</span>
+                                <span class="px-3 py-1 bg-secondary/20 text-secondary rounded-full text-sm">Tailwind CSS</span>
+                                <span class="px-3 py-1 bg-secondary/20 text-secondary rounded-full text-sm">UI/UX</span>
                             </div>
                             <!-- <div class="text-sm text-text-secondary">
                                 <strong class="text-accent">Resultado:</strong> 50,000+ estudiantes educados globalmente
@@ -534,26 +564,26 @@
                     <div class="w-full md:w-5/12">
                         <div class="card hover-lift p-8">
                             <div class="mb-6">
-                                <img src="../resources/luholife_e-commerce.webp" alt="Imagen la tienda en linea de la marca luholife.com" class="w-full h-64 object-cover rounded-lg" loading="lazy" />
+                                 <img src="../resources/elchory_project.webp" alt="myroofimprovement.com website" class="w-full h-auto object-cover rounded-lg" loading="lazy" />
                             </div>
                         
                             <div class="mb-4">
-                                <a href="https://www.luholife.com/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-secondary hover:text-accent transition-colors duration-300">
+                                <a href="https://webg51.sg-host.com/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-secondary hover:text-accent transition-colors duration-300">
                                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
                                     </svg>
                                     <span class="text-sm font-medium">Ver sitio web</span>
                                 </a>
                             </div>
-                            <h3 class="text-2xl font-bold mb-4 text-gradient">LuhoLife El Salvador</h3>
+                            <h3 class="text-2xl font-bold mb-4 text-gradient">El Chory prototipo de web</h3>
                             <p class="text-text-secondary mb-6">
-                                Colaboré en el desarrollo de la tienda en línea de Luholife, integrando plugins de e-commerce y chatbot para optimizar la experiencia de usuario y la interacción digital.
+                                Plataforma de comercio electrónico para la marca "El chory", desarrollada como proyecto universitario, con una tienda en línea integrada para la gestión de pedidos directos.
                             </p>
                             <div class="flex flex-wrap gap-2 mb-4">
-                                <span class="px-3 py-1 bg-accent/20 text-accent rounded-full text-sm">Divi Builder</span>
                                 <span class="px-3 py-1 bg-accent/20 text-accent rounded-full text-sm">Wordpress</span>
-                                <span class="px-3 py-1 bg-accent/20 text-accent rounded-full text-sm">HTML</span>
-                                <span class="px-3 py-1 bg-accent/20 text-accent rounded-full text-sm">PostgreSQL</span>
+                                <span class="px-3 py-1 bg-accent/20 text-accent rounded-full text-sm">Elementor</span>
+                                <span class="px-3 py-1 bg-accent/20 text-accent rounded-full text-sm">JavaScript</span>
+                                <span class="px-3 py-1 bg-accent/20 text-accent rounded-full text-sm">SiteGround</span>
                             </div>
                             <!-- <div class="text-sm text-text-secondary">
                                 <strong class="text-accent">Resultado:</strong> 40% de reducción en tiempo de inactividad del equipo
@@ -566,6 +596,176 @@
     </div>
 </section>
 
+<!-- Trabajar conmigo Section -->
+<section id="journey" class="py-20 px-6">
+    <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6 text-gradient">¿Por qué trabajar conmigo?</h2>
+            <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                Desde el desarrollo web tradicional hasta las experiencias digitales 3D pioneras - una historia de evolución continua y avance creativo.
+            </p>
+        </div>
+
+        <!-- Stepper -->
+        <div class="relative mb-20">
+            <!-- Desktop Stepper -->
+            <div class="hidden md:block relative px-8 md:px-16 py-12">
+                <div class="step-line"></div>
+                <div class="step-progress" id="progressLine" style="width: 0%"></div>
+
+                <div class="flex justify-between items-center relative">
+                    <div class="step-item flex flex-col items-center" data-step="0">
+                        <div class="step-circle active" onclick="setStep(0)">
+                            <span class="step-icon">🔍</span>
+                            <div class="step-tooltip" id="tooltip-0">
+                                <p class="step-tooltip-title">Análisis Digital</p>
+                                <p class="step-tooltip-text">Investigamos tus necesidades y objetivos</p>
+                            </div>
+                        </div>
+                        <p class="mt-4 text-sm md:text-base font-semibold text-center">Análisis</p>
+                    </div>
+
+                    <div class="step-item flex flex-col items-center" data-step="1">
+                        <div class="step-circle" onclick="setStep(1)">
+                            <span class="step-icon">💰</span>
+                            <div class="step-tooltip" id="tooltip-1">
+                                <p class="step-tooltip-title">Cotización Detallada</p>
+                                <p class="step-tooltip-text">Presupuesto claro y transparente</p>
+                            </div>
+                        </div>
+                        <p class="mt-4 text-sm md:text-base font-semibold text-center">Cotización</p>
+                    </div>
+
+                    <div class="step-item flex flex-col items-center" data-step="2">
+                        <div class="step-circle" onclick="setStep(2)">
+                            <span class="step-icon">🎨</span>
+                            <div class="step-tooltip" id="tooltip-2">
+                                <p class="step-tooltip-title">Diseño Creativo</p>
+                                <p class="step-tooltip-text">Interfaces modernas y atractivas</p>
+                            </div>
+                        </div>
+                        <p class="mt-4 text-sm md:text-base font-semibold text-center">Diseño</p>
+                    </div>
+
+                    <div class="step-item flex flex-col items-center" data-step="3">
+                        <div class="step-circle" onclick="setStep(3)">
+                            <span class="step-icon">⚙️</span>
+                            <div class="step-tooltip" id="tooltip-3">
+                                <p class="step-tooltip-title">Desarrollo Técnico</p>
+                                <p class="step-tooltip-text">Código limpio y optimizado</p>
+                            </div>
+                        </div>
+                        <p class="mt-4 text-sm md:text-base font-semibold text-center">Desarrollo</p>
+                    </div>
+
+                    <div class="step-item flex flex-col items-center" data-step="4">
+                        <div class="step-circle" onclick="setStep(4)">
+                            <span class="step-icon">🚀</span>
+                            <div class="step-tooltip" id="tooltip-4">
+                                <p class="step-tooltip-title">Lanzamiento</p>
+                                <p class="step-tooltip-text">Tu sitio en vivo y funcionando</p>
+                            </div>
+                        </div>
+                        <p class="mt-4 text-sm md:text-base font-semibold text-center">Lanzamiento</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile Stepper -->
+            <div class="md:hidden">
+                <!-- Progress indicator -->
+                <div class="flex justify-center items-center gap-2 mb-8">
+                    <span class="step-dot" data-dot="0"></span>
+                    <span class="step-dot" data-dot="1"></span>
+                    <span class="step-dot" data-dot="2"></span>
+                    <span class="step-dot" data-dot="3"></span>
+                    <span class="step-dot" data-dot="4"></span>
+                </div>
+
+                <!-- Current step display -->
+                <div class="text-center mb-8">
+                    <div class="inline-flex items-center justify-center mb-4">
+                        <div class="step-circle-mobile active">
+                            <span class="step-icon-mobile" id="mobileStepIcon">🔍</span>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-2 gradient-text" id="mobileStepTitle">Análisis Digital</h3>
+                    <p class="text-text-secondary" id="mobileStepDesc">Investigamos tus necesidades y objetivos</p>
+                </div>
+
+                <!-- Navigation buttons -->
+                <div class="flex justify-between items-center gap-4 px-4">
+                    <button onclick="previousStepMobile()" id="prevBtnMobile" class="btn-secondary flex items-center gap-2 px-4 py-2 rounded-lg disabled:opacity-50 disabled:cursor-not-allowed" disabled>
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+                        </svg>
+                        Anterior
+                    </button>
+                    <span class="text-sm text-text-secondary">
+                        <span id="mobileCurrentStep">1</span> / 5
+                    </span>
+                    <button onclick="nextStepMobile()" id="nextBtnMobile" class="btn-primary flex items-center gap-2 px-4 py-2 rounded-lg">
+                        Siguiente
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class="space-y-8">
+                <div class="card hover-lift">
+                    <div class="flex items-start space-x-4">
+                        <div class="w-12 h-12 bg-gradient-to-r from-secondary to-accent rounded-lg flex items-center justify-center neon-glow-orange">
+                            <svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">Los Fundamentos</h3>
+                            <p class="text-text-secondary">Comencé con desarrollo web tradicional, dominando HTML, CSS y JavaScript. Construí innumerables sitios web, pero siempre sentí que algo faltaba - la chispa de la verdadera innovación.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card hover-lift">
+                    <div class="flex items-start space-x-4">
+                        <div class="w-12 h-12 bg-gradient-to-r from-accent to-secondary rounded-lg flex items-center justify-center neon-glow-violet">
+                            <svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">El Descubrimiento</h3>
+                            <p class="text-text-secondary">Descubrí Three.js y WebGL - de repente la web se convirtió en un lienzo para el arte 3D. Este fue el momento en que todo cambió, abriendo infinitas posibilidades para la narración digital.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card hover-lift">
+                    <div class="flex items-start space-x-4">
+                        <div class="w-12 h-12 bg-gradient-to-r from-secondary to-accent rounded-lg flex items-center justify-center neon-glow-orange">
+                            <svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M9 11H7v6h2v-6zm4 0h-2v6h2v-6zm4 0h-2v6h2v-6zm2.5-9H19v2h-1.5v17.5c0 .83-.67 1.5-1.5 1.5H8c-.83 0-1.5-.67-1.5-1.5V4H5V2h3.5c0-.83.67-1.5 1.5-1.5h4c.83 0 1.5.67 1.5 1.5H18.5z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">La Evolución</h3>
+                            <p class="text-text-secondary">Evolucioné hacia un artesano digital, combinando maestría técnica con visión artística. Cada proyecto se convirtió en una oportunidad para empujar límites y crear experiencias extraordinarias.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="relative">
+                <img src="https://images.unsplash.com/photo-1605379399642-870262d3d051?q=80&w=1806&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Digital craftsperson workspace with multiple monitors showing 3D designs" class="w-full h-96 object-cover rounded-lg" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                <div class="absolute inset-0 bg-gradient-to-t from-secondary/20 to-transparent rounded-lg"></div>
+            </div>
+        </div>
+    </div>
+</section>
 
     <!-- Featured Projects Section -->
     <section class="py-20 px-6">
@@ -1381,7 +1581,104 @@
         document.body.classList.add('loaded');
         initInfiniteCarousel();
     });
+
+    // Pasos del proceso
+const stepsData = [
+    { icon: '🔍', title: 'Análisis Digital', desc: 'Investigamos tus necesidades y objetivos' },
+    { icon: '💰', title: 'Cotización Detallada', desc: 'Presupuesto claro y transparente' },
+    { icon: '🎨', title: 'Diseño Creativo', desc: 'Interfaces modernas y atractivas' },
+    { icon: '⚙️', title: 'Desarrollo Técnico', desc: 'Código limpio y optimizado' },
+    { icon: '🚀', title: 'Lanzamiento', desc: 'Tu sitio en vivo y funcionando' }
+];
+
+let currentStep = 0;
+let tooltipTimeout;
+
+// Actualiza estado visual del stepper de escritorio
+function setStep(step) {
+    const circles = document.querySelectorAll('.step-circle');
+    const progressLine = document.getElementById('progressLine');
+    
+    circles.forEach((circle, index) => {
+        circle.classList.remove('active', 'completed');
+        if (index < step) circle.classList.add('completed');
+        if (index === step) circle.classList.add('active');
+    });
+    
+    const progress = (step / (stepsData.length - 1)) * 100;
+    progressLine.style.width = `${progress}%`;
+    
+    currentStep = step;
+    showTooltip(step);
+}
+
+// Muestra el tooltip del paso indicado
+function showTooltip(step) {
+    document.querySelectorAll('.step-tooltip').forEach(t => t.classList.remove('show'));
+    const tooltip = document.getElementById(`tooltip-${step}`);
+    if (tooltip) {
+        clearTimeout(tooltipTimeout);
+        tooltip.classList.add('show');
+        tooltipTimeout = setTimeout(() => tooltip.classList.remove('show'), 3000);
+    }
+}
+
+// Tooltips en escritorio (hover)
+document.querySelectorAll('.step-circle').forEach((circle, index) => {
+    circle.addEventListener('mouseenter', () => {
+        if (window.innerWidth > 768) showTooltip(index);
+    });
+    
+    circle.addEventListener('mouseleave', () => {
+        if (window.innerWidth > 768) {
+            clearTimeout(tooltipTimeout);
+            tooltipTimeout = setTimeout(() => {
+                document.querySelectorAll('.step-tooltip').forEach(t => t.classList.remove('show'));
+            }, 500);
+        }
+    });
+});
+
+let currentStepMobile = 0;
+
+// Actualiza contenido y progreso del stepper móvil
+function updateMobileStep() {
+    const step = stepsData[currentStepMobile];
+    
+    document.getElementById('mobileStepIcon').textContent = step.icon;
+    document.getElementById('mobileStepTitle').textContent = step.title;
+    document.getElementById('mobileStepDesc').textContent = step.desc;
+    document.getElementById('mobileCurrentStep').textContent = currentStepMobile + 1;
+    
+    document.querySelectorAll('.step-dot').forEach((dot, index) => {
+        dot.classList.remove('active', 'completed');
+        if (index < currentStepMobile) dot.classList.add('completed');
+        if (index === currentStepMobile) dot.classList.add('active');
+    });
+    
+    document.getElementById('prevBtnMobile').disabled = currentStepMobile === 0;
+    document.getElementById('nextBtnMobile').disabled = currentStepMobile === stepsData.length - 1;
+}
+
+// Paso siguiente en móvil
+function nextStepMobile() {
+    if (currentStepMobile < stepsData.length - 1) {
+        currentStepMobile++;
+        updateMobileStep();
+    }
+}
+
+// Paso anterior en móvil
+function previousStepMobile() {
+    if (currentStepMobile > 0) {
+        currentStepMobile--;
+        updateMobileStep();
+    }
+}
+
+// Inicializa el stepper móvil al cargar
+updateMobileStep();
+
 </script>
-<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
 </body>
 </html>
