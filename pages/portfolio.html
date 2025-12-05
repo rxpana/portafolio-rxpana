@@ -454,23 +454,12 @@
                                 </div>
                             </div>
 
-                            <!-- Client Testimonial -->
-                            <div class="card">
-                                <div class="flex items-center mb-4">
-                                    <img id="client-avatar" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1974&auto=format&fit=crop" alt="Client" class="w-12 h-12 rounded-full object-cover mr-4" loading="lazy" />
-                                    <div>
-                                        <h4 id="client-name" class="font-semibold">Michael Chen</h4>
-                                        <p id="client-title" class="text-sm text-text-secondary">CEO, TechFlow</p>
-                                    </div>
-                                </div>
-                                <p id="client-testimonial" class="text-text-secondary italic">"La excelencia técnica y la visión creativa resultaron en una solución que superó todas nuestras expectativas. Trabajo verdaderamente excepcional."</p>
-                            </div>
                         </div>
                     </div>
 
                     <!-- Action Buttons -->
                     <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                        <a href="javascript:void(0)" class="btn-primary text-center">
+                        <a id="website-link" href="#" target="_blank" rel="noopener noreferrer" class="btn-primary text-center" onclick="event.stopPropagation()">
                             Ver Sitio Web
                         </a>
                     </div>
@@ -750,12 +739,7 @@
                     metric3: '+340%',
                     metric4: '99.8%'
                 },
-                client: {
-                    name: 'Christian Hernandez',
-                    title: 'Chief Excutive Officer',
-                    avatar: 'https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-                    testimonial: 'The 3D visualization completely transformed our online shopping experience. Customer engagement increased by 340% and our conversion rate doubled.'
-                }
+                websiteUrl: 'https://jcncroofing.com'
             },
             'el-chory': {
                 title: 'El Chory',
@@ -770,12 +754,7 @@
                     metric3: '+250%',
                     metric4: '99.7%'
                 },
-                client: {
-                    name: 'María González',
-                    title: 'Gerente de Ventas',
-                    avatar: 'https://images.pexels.com/photos/3763188/pexels-photo-3763188.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-                    testimonial: 'La nueva tienda en línea ha superado nuestras expectativas. Hemos incrementado nuestras ventas en un 250% y la experiencia de nuestros clientes ha mejorado significativamente.'
-                }
+                websiteUrl: 'https://elchory.com'
             },
             'portal-corporativo': {
                 title: 'Portal Web Corporativo',
@@ -790,12 +769,7 @@
                     metric3: '+180%',
                     metric4: '99.9%'
                 },
-                client: {
-                    name: 'Carlos Mendoza',
-                    title: 'Director de Marketing',
-                    avatar: 'https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-                    testimonial: 'El nuevo portal corporativo ha transformado nuestra presencia en línea. Hemos recibido numerosos elogios por el diseño y la facilidad de navegación.'
-                }
+                websiteUrl: '#'
             },
             'luholife': {
                 title: 'LuhoLife El Salvador',
@@ -810,12 +784,7 @@
                     metric3: '+300%',
                     metric4: '99.6%'
                 },
-                client: {
-                    name: 'Ana Rodríguez',
-                    title: 'Fundadora',
-                    avatar: 'https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-                    testimonial: 'El crecimiento que ha tenido nuestro negocio desde que lanzamos la tienda en línea ha sido increíble. Hemos triplicado nuestras ventas y expandido nuestro alcance a todo el país.'
-                }
+                websiteUrl: 'https://luholife.com.sv'
             },
             'brand-immersive': {
                 title: 'Savvy Post Marketing',
@@ -830,12 +799,7 @@
                     metric3: '+280%',
                     metric4: '99.9%'
                 },
-                client: {
-                    name: 'Michael Chen',
-                    title: 'CEO, SPM',
-                    avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1974&auto=format&fit=crop',
-                    testimonial: 'The creative vision and technical execution set a new standard for our industry. This project won three design awards and significantly elevated our brand presence.'
-                }
+                websiteUrl: 'https://savvypostmarketing.com'
             },
             'analytics-dashboard': {
                 title: 'Website Fotografía',
@@ -850,12 +814,7 @@
                     metric3: '+190%',
                     metric4: '99.9%'
                 },
-                client: {
-                    name: 'David Thompson',
-                    title: 'CTO, DataFlow Inc',
-                    avatar: 'https://images.pixabay.com/photo/2016/11/21/12/42/beard-1845166_1280.jpg',
-                    testimonial: 'The dashboard revolutionized how we analyze data. The AI-powered insights helped us identify trends we never would have discovered manually.'
-                }
+                websiteUrl: 'https://website-photos.com',
             }
         };
 
@@ -869,7 +828,12 @@
 
         // Open project modal
         projectCards.forEach(card => {
-            card.addEventListener('click', () => {
+            card.addEventListener('click', (e) => {
+                // Don't open modal if clicking on a link or button inside the card
+                if (e.target.tagName === 'A' || e.target.closest('a, button')) {
+                    return;
+                }
+                
                 const projectId = card.getAttribute('data-project');
                 const project = projectData[projectId];
                 
@@ -911,11 +875,17 @@
                     document.getElementById('metric-3').textContent = project.metrics.metric3;
                     document.getElementById('metric-4').textContent = project.metrics.metric4;
                     
-                    // Update client info
-                    document.getElementById('client-name').textContent = project.client.name;
-                    document.getElementById('client-title').textContent = project.client.title;
-                    document.getElementById('client-avatar').src = project.client.avatar;
-                    document.getElementById('client-testimonial').textContent = project.client.testimonial;
+                    // Update website link
+                    const websiteLink = document.getElementById('website-link');
+                    if (project.websiteUrl && project.websiteUrl !== '#') {
+                        websiteLink.href = project.websiteUrl.startsWith('http') ? project.websiteUrl : `https://${project.websiteUrl}`;
+                        websiteLink.classList.remove('opacity-50', 'cursor-not-allowed');
+                        websiteLink.style.pointerEvents = 'auto';
+                    } else {
+                        websiteLink.href = 'javascript:void(0);';
+                        websiteLink.classList.add('opacity-50', 'cursor-not-allowed');
+                        websiteLink.style.pointerEvents = 'none';
+                    }
                     
                     // Show modal
                     projectModal.classList.remove('hidden');
